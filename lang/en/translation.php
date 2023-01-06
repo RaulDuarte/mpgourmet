@@ -55,8 +55,6 @@ return [
     "signup"=>"Sign Up",
     "password-reset"=>"Password Reset",
     "password-create"=>"Password Create",
-    "lock-screen"=>"Lock Screen",
-    "logout"=>"Logout",
     "success-message"=>"Success Message",
     "two-step-verification"=>"Two Step Verification",
     "errors"=>"Errors",
@@ -66,9 +64,7 @@ return [
     "500"=>"500",
     "offline-page"=>"Offline Page",
     "starter"=>"Starter",
-    "profile"=>"Profile",
     "simple-page"=>"Simple Page",
-    "settings"=>"Settings",
     "team"=>"Team",
     "timeline"=>"Timeline",
     "faqs"=>"FAQs",
@@ -224,6 +220,12 @@ return [
     "api-key" => "API Key",
     "privacy-policy" => "Privacy Policy",
     "hot" => "Hot",
+
+    "profile" => "Profile",
+    "help" => "Help",
+    "settings"=>"Settings",
+    "lock-screen"=>"Lock Screen",
+    "logout" => "Logout",
 ];
 ?>
 

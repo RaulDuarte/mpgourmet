@@ -55,8 +55,6 @@ return [
     "signup"=>"Inscribirse",
     "password-reset"=>"Restablecimiento de contraseña",
     "password-reset"=>"Restablecimiento de contraseña",
-    "lock-screen"=>"Bloquear pantalla",
-    "logout"=>"Cerrar sesión",
     "success-message"=>"Mensaje de éxito",
     "two-step-verification"=>"Verificación de dos pasos",
     "errors"=>"errores",
@@ -66,9 +64,7 @@ return [
     "500"=>"500",
     "offline-page"=>"Página sin conexión",
     "starter"=>"Arrancador",
-    "profile"=>"Perfil",
     "simple-page"=>"Página sencilla",
-    "settings"=>"Ajustes",
     "team"=>"Equipo",
     "timeline"=>"Cronología",
     "faqs"=>"preguntas frecuentes",
@@ -225,6 +221,11 @@ return [
     "privacy-policy" => "Política de privacidad",
     "hot" => "Caliente",
 
+    "profile"=>"Perfil",
+    "help" => "Ayudar",
+    "settings"=>"Ajustes",
+    "lock-screen"=>"Bloquear pantalla",
+    "logout"=>"Cerrar sesión",
 
 ];
 ?>

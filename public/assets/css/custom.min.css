@@ -1,0 +1,71 @@
+/*TODO: Tranferir para custom.css e minificar neste arquivo */
+.auth-one-bg .bg-overlay {
+    background: linear-gradient(180deg,#471016,#912d34b2) !important;
+    opacity: .9 !important;
+}
+
+.mp-logo{
+    margin-top: -2rem !important;
+}
+
+.auth-one-bg {
+    background-image: url(../images/login/scooping-the-food.jpg) !important;
+    background-position: 50%;
+    background-size: cover;
+} 
+
+[data-layout=vertical][data-sidebar=dark] .navbar-menu {
+    background: #471016;
+    border-right: 1px solid #471016;
+}
+
+.logo-lg img {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.navbar-brand-box{
+    background:#471016 !important;
+}
+
+[data-layout=vertical][data-sidebar=dark] .navbar-nav .nav-link {
+    color: #ffffff !important;
+}
+
+[data-layout=vertical][data-sidebar=dark] .navbar-nav .nav-link.active {
+    color: #F2921D !important;
+}
+
+[data-layout=vertical][data-sidebar=dark] .menu-title {
+    color: #ffffff !important;
+}
+
+.profile-wid-bg:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    opacity: .9;
+    background: #4b38b3;
+    background: linear-gradient(180deg,#471016,#912d34b2) !important;
+}
+
+.bg-overlay-image {
+    background-image: url(../images/landing/smiling-worker-posing-behind-the-counter.jpg);
+    background-color: transparent;
+    background-position: top;
+    background-size: cover;
+    opacity: 1;
+    transform:scaleX(-1);
+    background-repeat: no-repeat;
+}
+
+.icon-effect:before {
+    background-color: rgba(47,10,16,.2);
+}
+
+.pallet-primary-color{
+    color: #471016;
+}

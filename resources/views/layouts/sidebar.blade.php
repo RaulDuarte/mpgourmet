@@ -14,10 +14,10 @@
         <!-- Light Logo-->
         <a href="index" class="logo logo-light">
             <span class="logo-sm">
-                <img src="{{ URL::asset('assets/images/logo-sm.png') }}" alt="" height="22">
+                <img src="{{ URL::asset('assets/images/logos/mp-sm-logo.png') }}" alt="" height="22">
             </span>
             <span class="logo-lg">
-                <img src="{{ URL::asset('assets/images/logo-light.png') }}" alt="" height="17">
+                <img src="{{ URL::asset('assets/images/logos/mp-logo.png') }}" alt="" height="100">
             </span>
         </a>
         <button type="button" class="btn btn-sm p-0 fs-20 header-item float-end btn-vertical-sm-hover" id="vertical-hover">
@@ -31,44 +31,479 @@
             <div id="two-column-menu">
             </div>
             <ul class="navbar-nav" id="navbar-nav">
-                <li class="menu-title"><span>@lang('translation.menu')
-                    </span></li>
+                <li class="menu-title"><span>@lang('translation.management')</span></li>
+                
                 <li class="nav-item">
-                    <a class="nav-link menu-link" href="#sidebarDashboards" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarDashboards">
+                    <a class="nav-link menu-link" href="index" data-bs-toggle="none" role="button" aria-expanded="false" aria-controls="sidebarDashboards">
                         <i class="mdi mdi-speedometer"></i> <span>@lang('translation.dashboards')
                         </span>
                     </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link menu-link" href="apps-ecommerce-customers" data-bs-toggle="none" role="button" aria-expanded="false" aria-controls="sidebarDashboards">
+                        <i class="mdi mdi-speedometer"></i> <span>@lang('translation.clients')
+                        </span>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link menu-link" href="apps-ecommerce-customers" data-bs-toggle="none" role="button" aria-expanded="false" aria-controls="sidebarDashboards">
+                        <i class="mdi mdi-speedometer"></i> <span>@lang('translation.students')
+                        </span>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link menu-link" href="apps-ecommerce-orders" data-bs-toggle="none" role="button" aria-expanded="false" aria-controls="sidebarDashboards">
+                        <i class="mdi mdi-speedometer"></i> <span>@lang('translation.orders')
+                        </span>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link menu-link" href="apps-ecommerce-products" data-bs-toggle="none" role="button" aria-expanded="false" aria-controls="sidebarDashboards">
+                        <i class="mdi mdi-speedometer"></i> <span>@lang('translation.packages')
+                        </span>
+                    </a>
+                </li>
+
+                <li class="menu-title"><i class="ri-more-fill"></i> <span></span></li>
+
+                <li class="menu-title"><span>@lang('translation.quick-access')</span></li>
+
+                <li class="nav-item">
+                    <!--
+                    <a class="nav-link menu-link" href="index" data-bs-toggle="none" role="button" aria-expanded="false" aria-controls="sidebarDashboards">
+                        <i class="mdi mdi-speedometer"></i> <span>@lang('translation.dashboards')
+                        </span>
+                    </a>
+                    -->
                     <div class="collapse menu-dropdown" id="sidebarDashboards">
                         <ul class="nav nav-sm flex-column">
+                            <!-- Dashboard Analytics
                             <li class="nav-item">
                                 <a href="dashboard-analytics" class="nav-link">@lang('translation.analytics')
                                 </a>
                             </li>
+                            -->
+                            <!-- Dashboard CRM
                             <li class="nav-item">
                                 <a href="dashboard-crm" class="nav-link">@lang('translation.crm')
                                 </a>
                             </li>
+                            -->
+                            <!-- Dashboard Collapse Item
                             <li class="nav-item">
                                 <a href="index" class="nav-link">@lang('translation.ecommerce')
                                 </a>
                             </li>
+                        -->
+                            <!-- Dashboard Crypto
                             <li class="nav-item">
                                 <a href="dashboard-crypto" class="nav-link">@lang('translation.crypto')
                                 </a>
                             </li>
+                            -->
+                            <!-- Dashboard Projects
                             <li class="nav-item">
                                 <a href="dashboard-projects" class="nav-link">@lang('translation.projects')
                                 </a>
                             </li>
+                            -->
+                            <!-- Dashboard NFT
                             <li class="nav-item">
                                 <a href="dashboard-nft" class="nav-link"> @lang('translation.nft')</a>
                             </li>
-                            <li class="nav-item">
+                            -->
+                            <!-- Dashboard Job
+                                <li class="nav-item">
                                 <a href="dashboard-job" class="nav-link"><span>@lang('translation.job')</span> <span class="badge badge-pill bg-success">@lang('translation.new')</span></a>
                             </li>
+                            -->
                         </ul>
                     </div>
                 </li> <!-- end Dashboard Menu -->
+
+                <!-- Layouts
+                <li class="nav-item">
+                    <a class="nav-link menu-link" href="#sidebarLayouts" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarLayouts">
+                        <i class="mdi mdi-view-carousel-outline"></i>@lang('translation.layouts')<span class="badge badge-pill bg-danger">@lang('translation.hot')</span>
+                        
+                    </a>
+                    <div class="collapse menu-dropdown" id="sidebarLayouts">
+                        <ul class="nav nav-sm flex-column">
+                            <li class="nav-item">
+                                <a href="layouts-horizontal" class="nav-link" target="_blank">@lang('translation.horizontal')
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="layouts-detached" class="nav-link" target="_blank">@lang('translation.detached')
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="layouts-two-column" class="nav-link" target="_blank">@lang('translation.two-column')
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="layouts-vertical-hovered" class="nav-link" target="_blank">@lang('translation.hovered')
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li> 
+                -->
+                <!-- end Dashboard Menu -->
+
+                <li class="nav-item">
+                    <a class="nav-link menu-link" href="pages-profile" data-bs-toggle="none" role="button" aria-expanded="false" aria-controls="sidebarDashboards">
+                        <i class="mdi mdi-speedometer"></i> <span>@lang('translation.profile')
+                        </span>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link menu-link" href="pages-pricing" data-bs-toggle="none" role="button" aria-expanded="false" aria-controls="sidebarDashboards">
+                        <i class="mdi mdi-speedometer"></i> <span>@lang('translation.month-packages')
+                        </span>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link menu-link" href="apps-ecommerce-cart" data-bs-toggle="none" role="button" aria-expanded="false" aria-controls="sidebarDashboards">
+                        <i class="mdi mdi-speedometer"></i> <span>@lang('translation.detached-packages')
+                        </span>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link menu-link" href="pages-privacy-policy" data-bs-toggle="none" role="button" aria-expanded="false" aria-controls="sidebarDashboards">
+                        <i class="mdi mdi-speedometer"></i> <span>@lang('translation.privacy-policy')
+                        </span>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link menu-link" href="pages-term-conditions" data-bs-toggle="none" role="button" aria-expanded="false" aria-controls="sidebarDashboards">
+                        <i class="mdi mdi-speedometer"></i> <span>@lang('translation.terms-conditions')
+                        </span>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link menu-link" href="#sidebarAuth" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarAuth">
+                        <i class="mdi mdi-account-circle-outline"></i> <span>@lang('translation.authentication')
+                        </span>
+                    </a>
+                    <div class="collapse menu-dropdown" id="sidebarAuth">
+                        <ul class="nav nav-sm flex-column">
+                            <li class="nav-item">
+                                <a href="#sidebarSignIn" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarSignIn">@lang('translation.signin')
+
+                                </a>
+                                <div class="collapse menu-dropdown" id="sidebarSignIn">
+                                    <ul class="nav nav-sm flex-column">
+                                        <li class="nav-item">
+                                            <a href="auth-signin-basic" class="nav-link">@lang('translation.basic')
+                                            </a>
+                                        </li>
+                                        <!-- Signin Cover
+                                        <li class="nav-item">
+                                            <a href="auth-signin-cover" class="nav-link">@lang('translation.cover')
+                                            </a>
+                                        </li>
+                                        -->
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#sidebarSignUp" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarSignUp">@lang('translation.signup')
+
+                                </a>
+                                <div class="collapse menu-dropdown" id="sidebarSignUp">
+                                    <ul class="nav nav-sm flex-column">
+                                        <li class="nav-item">
+                                            <a href="auth-signup-basic" class="nav-link">@lang('translation.basic')
+                                            </a>
+                                        </li>
+                                        <!-- Signup Cover
+                                        <li class="nav-item">
+                                            <a href="auth-signup-cover" class="nav-link">@lang('translation.cover')
+                                            </a>
+                                        </li>
+                                        -->
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="#sidebarResetPass" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarResetPass">@lang('translation.password-reset')
+
+                                </a>
+                                <div class="collapse menu-dropdown" id="sidebarResetPass">
+                                    <ul class="nav nav-sm flex-column">
+                                        <li class="nav-item">
+                                            <a href="auth-pass-reset-basic" class="nav-link">@lang('translation.basic')
+                                            </a>
+                                        </li>
+                                        <!-- Reset Basic
+                                        <li class="nav-item">
+                                            <a href="auth-pass-reset-cover" class="nav-link">@lang('translation.cover')
+                                            </a>
+                                        </li>
+                                        -->
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="#sidebarchangePass" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarchangePass">@lang('translation.password-create')
+                                </a>
+                                <div class="collapse menu-dropdown" id="sidebarchangePass">
+                                    <ul class="nav nav-sm flex-column">
+                                        <li class="nav-item">
+                                            <a href="auth-pass-change-basic" class="nav-link">@lang('translation.basic')</a>
+                                        </li>
+                                        <!-- Change Password
+                                        <li class="nav-item">
+                                            <a href="auth-pass-change-cover" class="nav-link">@lang('translation.cover')</a>
+                                        </li>
+                                        -->
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="#sidebarLockScreen" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarLockScreen">@lang('translation.lock-screen')
+
+                                </a>
+                                <div class="collapse menu-dropdown" id="sidebarLockScreen">
+                                    <ul class="nav nav-sm flex-column">
+                                        <li class="nav-item">
+                                            <a href="auth-lockscreen-basic" class="nav-link">@lang('translation.basic')
+                                            </a>
+                                        </li>
+                                        <!-- Lockscreen Cover
+                                        <li class="nav-item">
+                                            <a href="auth-lockscreen-cover" class="nav-link">@lang('translation.cover')
+                                            </a>
+                                        </li>
+                                        -->
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="#sidebarLogout" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarLogout">@lang('translation.logout')
+
+                                </a>
+                                <div class="collapse menu-dropdown" id="sidebarLogout">
+                                    <ul class="nav nav-sm flex-column">
+                                        <li class="nav-item">
+                                            <a href="auth-logout-basic" class="nav-link">@lang('translation.basic')
+                                            </a>
+                                        </li>
+                                        <!-- Logout Cover
+                                        <li class="nav-item">
+                                            <a href="auth-logout-cover" class="nav-link">@lang('translation.cover')
+                                            </a>
+                                        </li>
+                                        -->
+                                    </ul>
+                                </div>
+                            </li>
+                            <!-- Success Message
+                            <li class="nav-item">
+                                <a href="#sidebarSuccessMsg" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarSuccessMsg">@lang('translation.success-message')
+
+                                </a>
+                                <div class="collapse menu-dropdown" id="sidebarSuccessMsg">
+                                    <ul class="nav nav-sm flex-column">
+                                        <li class="nav-item">
+                                            <a href="auth-success-msg-basic" class="nav-link">@lang('translation.basic')
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="auth-success-msg-cover" class="nav-link">@lang('translation.cover')
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            -->
+                            <!-- Two Step Verification
+                            <li class="nav-item">
+                                <a href="#sidebarTwoStep" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarTwoStep">@lang('translation.two-step-verification')
+
+                                </a>
+                                <div class="collapse menu-dropdown" id="sidebarTwoStep">
+                                    <ul class="nav nav-sm flex-column">
+                                        <li class="nav-item">
+                                            <a href="auth-twostep-basic" class="nav-link">@lang('translation.basic')
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="auth-twostep-cover" class="nav-link">@lang('translation.cover')
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            -->
+                            <li class="nav-item">
+                                <a href="#sidebarErrors" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarErrors">@lang('translation.errors')
+
+                                </a>
+                                <div class="collapse menu-dropdown" id="sidebarErrors">
+                                    <ul class="nav nav-sm flex-column">
+                                        <li class="nav-item">
+                                            <a href="auth-404-basic" class="nav-link">@lang('translation.404-basic')
+                                            </a>
+                                        </li>
+                                        <!-- Error 404 Cover
+                                        <li class="nav-item">
+                                            <a href="auth-404-cover" class="nav-link">@lang('translation.404-cover')
+                                            </a>
+                                        </li>
+                                        -->
+                                        <!-- Error 404 Alt
+                                        <li class="nav-item">
+                                            <a href="auth-404-alt" class="nav-link">@lang('translation.404-alt')
+                                            </a>
+                                        </li>
+                                        -->
+                                        <!-- Error 500
+                                        <li class="nav-item">
+                                            <a href="auth-500" class="nav-link">@lang('translation.500')
+                                            </a>
+                                        </li>
+                                        -->
+                                        <!-- Offline Page
+                                        <li class="nav-item">
+                                            <a href="auth-offline" class="nav-link">@lang('translation.offline-page')</a>
+                                        </li>
+                                        -->
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+        
+                <li class="nav-item">
+                    <a class="nav-link menu-link" href="#sidebarPages" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarPages">
+                        <i class="mdi mdi-sticker-text-outline"></i> <span>@lang('translation.pages')
+                        </span>
+                    </a>
+                    <div class="collapse menu-dropdown" id="sidebarPages">
+                        <ul class="nav nav-sm flex-column">
+                            <!-- Starter
+                            <li class="nav-item">
+                                <a href="pages-starter" class="nav-link">@lang('translation.starter')
+                                </a>
+                            </li>
+                            -->
+                            <li class="nav-item">
+                                <a href="#sidebarProfile" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarProfile">@lang('translation.profile')
+
+                                </a>
+                                <div class="collapse menu-dropdown" id="sidebarProfile">
+                                    <ul class="nav nav-sm flex-column">
+                                        <li class="nav-item">
+                                            <a href="pages-profile" class="nav-link">@lang('translation.simple-page')
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="pages-profile-settings" class="nav-link">@lang('translation.settings')
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a href="pages-team" class="nav-link">@lang('translation.team')
+                                </a>
+                            </li>
+                            <!-- Timeline
+                            <li class="nav-item">
+                                <a href="pages-timeline" class="nav-link">@lang('translation.timeline')
+                                </a>
+                            </li>
+                            -->
+                            <!-- Faqs
+                            <li class="nav-item">
+                                <a href="pages-faqs" class="nav-link">@lang('translation.faqs')
+                                </a>
+                            </li>
+                            -->
+                            <li class="nav-item">
+                                <a href="pages-pricing" class="nav-link">@lang('translation.pricing')
+                                </a>
+                            </li>
+                            <!-- Gallery
+                            <li class="nav-item">
+                                <a href="pages-gallery" class="nav-link">@lang('translation.gallery')
+                                </a>
+                            </li>
+                            -->
+                            <!-- Maintenance
+                            <li class="nav-item">
+                                <a href="pages-maintenance" class="nav-link">@lang('translation.maintenance')
+                                </a>
+                            </li>
+                            -->
+                            <!-- Coming Soon
+                            <li class="nav-item">
+                                <a href="pages-coming-soon" class="nav-link">@lang('translation.coming-soon')
+                                </a>
+                            </li>
+                            -->
+                            <!-- Sitemap
+                            <li class="nav-item">
+                                <a href="pages-sitemap" class="nav-link">@lang('translation.sitemap')
+                                </a>
+                            </li>
+                            -->
+                            <!-- Search Results
+                            <li class="nav-item">
+                                <a href="pages-search-results" class="nav-link">@lang('translation.search-results')
+                                </a>
+                            </li>
+                            -->
+                            <li class="nav-item">
+                                <a href="pages-privacy-policy" class="nav-link"><span data-key="t-privacy-policy">@lang('translation.privacy-policy')</span> <span class="badge badge-pill bg-success" data-key="t-new">@lang('translation.new')</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="pages-term-conditions" class="nav-link"><span>Term & Conditions</span> <span class="badge badge-pill bg-success" data-key="t-new">@lang('translation.new')</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            
+                <li class="nav-item">
+                    <a class="nav-link menu-link" href="#sidebarLanding" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarLanding">
+                        <i class="ri-rocket-line"></i> <span>@lang('translation.landing')</span>
+                    </a>
+                    <div class="collapse menu-dropdown" id="sidebarLanding">
+                        <ul class="nav nav-sm flex-column">
+                            <li class="nav-item">
+                                <a href="landing" class="nav-link"> @lang('translation.one-page') </a>
+                            </li>
+                            <!-- NFT Page
+                            <li class="nav-item">
+                                <a href="nft-landing" class="nav-link"> @lang('translation.nft-landing') </a>
+                            </li>
+                            -->
+                            <!-- Job Page
+                            <li class="nav-item">
+                                <a href="job-landing" class="nav-link"><span>@lang('translation.job')</span> <span class="badge badge-pill bg-success">@lang('translation.new')</span></a>
+                            </li>
+                            -->
+                        </ul>
+                    </div>
+                </li>
+
                 <li class="nav-item">
                     <a class="nav-link menu-link" href="#sidebarApps" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarApps">
                         <i class="mdi mdi-view-grid-plus-outline"></i> <span>@lang('translation.apps')
@@ -76,14 +511,19 @@
                     </a>
                     <div class="collapse menu-dropdown" id="sidebarApps">
                         <ul class="nav nav-sm flex-column">
+                            <!-- Apps Calendar
                             <li class="nav-item">
                                 <a href="apps-calendar" class="nav-link">@lang('translation.calendar')
                                 </a>
                             </li>
+                            -->
+                            <!-- Apps Chat
                             <li class="nav-item">
                                 <a href="apps-chat" class="nav-link">@lang('translation.chat')
                                 </a>
                             </li>
+                            -->
+                            <!--
                             <li class="nav-item">
                                 <a href="#sidebarEmail" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarEmail">
                                     @lang('translation.email')
@@ -112,6 +552,7 @@
                                 </div>
 
                             </li>
+                            -->
                             <li class="nav-item">
                                 <a href="#sidebarEcommerce" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarEcommerce">@lang('translation.ecommerce')
 
@@ -122,14 +563,17 @@
                                             <a href="apps-ecommerce-products" class="nav-link">@lang('translation.products')
                                             </a>
                                         </li>
+                                        <!-- Product Details
                                         <li class="nav-item">
                                             <a href="apps-ecommerce-product-details" class="nav-link">@lang('translation.product-Details')
                                             </a>
                                         </li>
+                                        -->
                                         <li class="nav-item">
                                             <a href="apps-ecommerce-add-product" class="nav-link">@lang('translation.create-product')
                                             </a>
                                         </li>
+
                                         <li class="nav-item">
                                             <a href="apps-ecommerce-orders" class="nav-link">@lang('translation.orders')
                                             </a>
@@ -150,17 +594,22 @@
                                             <a href="apps-ecommerce-checkout" class="nav-link">@lang('translation.checkout')
                                             </a>
                                         </li>
+                                        <!-- Sellers
                                         <li class="nav-item">
                                             <a href="apps-ecommerce-sellers" class="nav-link">@lang('translation.sellers')
                                             </a>
                                         </li>
+                                        -->
+                                        <!-- Seller Details
                                         <li class="nav-item">
                                             <a href="apps-ecommerce-seller-details" class="nav-link">@lang('translation.sellers-details')
                                             </a>
                                         </li>
+                                        -->
                                     </ul>
                                 </div>
                             </li>
+                            <!-- Apps Projects
                             <li class="nav-item">
                                 <a href="#sidebarProjects" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarProjects">@lang('translation.projects')
 
@@ -182,6 +631,8 @@
                                     </ul>
                                 </div>
                             </li>
+                            -->
+                            <!-- Apps Taks
                             <li class="nav-item">
                                 <a href="#sidebarTasks" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarTasks">@lang('translation.tasks')
 
@@ -203,6 +654,8 @@
                                     </ul>
                                 </div>
                             </li>
+                            -->
+                            <!-- Apps CRM
                             <li class="nav-item">
                                 <a href="#sidebarCRM" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarCRM">@lang('translation.crm')
 
@@ -228,6 +681,8 @@
                                     </ul>
                                 </div>
                             </li>
+                            -->
+                            <!-- Apps Crypto
                             <li class="nav-item">
                                 <a href="#sidebarCrypto" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarCrypto"> Crypto
                                 </a>
@@ -260,6 +715,8 @@
                                     </ul>
                                 </div>
                             </li>
+                            -->
+                            <!-- Apps Invoices
                             <li class="nav-item">
                                 <a href="#sidebarInvoices" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarInvoices"> Invoices
                                 </a>
@@ -280,6 +737,8 @@
                                     </ul>
                                 </div>
                             </li>
+                            -->
+                            <!-- Apps Tickets
                             <li class="nav-item">
                                 <a href="#sidebarTickets" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarTickets"> Support Tickets
                                 </a>
@@ -296,6 +755,8 @@
                                     </ul>
                                 </div>
                             </li>
+                            -->
+                            <!-- Apps NFT
                             <li class="nav-item">
                                 <a href="#sidebarnft" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarnft">
                                     @lang('translation.nft-marketplace')
@@ -320,9 +781,9 @@
                                         <li class="nav-item">
                                             <a href="apps-nft-creators" class="nav-link"> @lang('translation.creators') </a>
                                         </li>
-                                        <li class="nav-item">
+                                        <liH class="nav-item">
                                             <a href="apps-nft-ranking" class="nav-link"> @lang('translation.ranking') </a>
-                                        </li>
+                                        </liH>
                                         <li class="nav-item">
                                             <a href="apps-nft-wallet" class="nav-link"> @lang('translation.wallet-connect') </a>
                                         </li>
@@ -332,12 +793,18 @@
                                     </ul>
                                 </div>
                             </li>
+                            -->
+                            <!-- Apps File Manger
                             <li class="nav-item">
                                 <a href="apps-file-manager" class="nav-link"> <span>@lang('translation.file-manager')</span></a>
                             </li>
+                            -->
+                            <!-- Apps Todo
                             <li class="nav-item">
                                 <a href="apps-todo" class="nav-link"> <span>@lang('translation.to-do')</span></a>
                             </li>
+                            -->
+                            <!-- Apps Jobs
                             <li class="nav-item">
                                 <a href="#sidebarjobs" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarjobs"> <span>@lang('translation.jobs')</span> <span class="badge badge-pill bg-success">@lang('translation.new')</span></a>
                                 <div class="collapse menu-dropdown" id="sidebarjobs">
@@ -395,313 +862,21 @@
                                     </ul>
                                 </div>
                             </li>
+                            -->
+                            <!-- Apps API Key
                             <li class="nav-item">
                                 <a href="apps-api-key" class="nav-link"> <span>@lang('translation.api-key')</span> <span class="badge badge-pill bg-success">@lang('translation.new')</span></a>
                             </li>
+                            -->
                         </ul>
                     </div>
                 </li>
 
-                <li class="nav-item">
-                    <a class="nav-link menu-link" href="#sidebarLayouts" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarLayouts">
-                        <i class="mdi mdi-view-carousel-outline"></i>@lang('translation.layouts')<span class="badge badge-pill bg-danger">@lang('translation.hot')</span>
-                        
-                    </a>
-                    <div class="collapse menu-dropdown" id="sidebarLayouts">
-                        <ul class="nav nav-sm flex-column">
-                            <li class="nav-item">
-                                <a href="layouts-horizontal" class="nav-link" target="_blank">@lang('translation.horizontal')
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="layouts-detached" class="nav-link" target="_blank">@lang('translation.detached')
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="layouts-two-column" class="nav-link" target="_blank">@lang('translation.two-column')
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="layouts-vertical-hovered" class="nav-link" target="_blank">@lang('translation.hovered')
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </li> <!-- end Dashboard Menu -->
-
-                <li class="menu-title"><i class="ri-more-fill"></i> <span>@lang('translation.pages')
-                    </span></li>
-
-                <li class="nav-item">
-                    <a class="nav-link menu-link" href="#sidebarAuth" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarAuth">
-                        <i class="mdi mdi-account-circle-outline"></i> <span>@lang('translation.authentication')
-                        </span>
-                    </a>
-                    <div class="collapse menu-dropdown" id="sidebarAuth">
-                        <ul class="nav nav-sm flex-column">
-                            <li class="nav-item">
-                                <a href="#sidebarSignIn" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarSignIn">@lang('translation.signin')
-
-                                </a>
-                                <div class="collapse menu-dropdown" id="sidebarSignIn">
-                                    <ul class="nav nav-sm flex-column">
-                                        <li class="nav-item">
-                                            <a href="auth-signin-basic" class="nav-link">@lang('translation.basic')
-                                            </a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="auth-signin-cover" class="nav-link">@lang('translation.cover')
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#sidebarSignUp" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarSignUp">@lang('translation.signup')
-
-                                </a>
-                                <div class="collapse menu-dropdown" id="sidebarSignUp">
-                                    <ul class="nav nav-sm flex-column">
-                                        <li class="nav-item">
-                                            <a href="auth-signup-basic" class="nav-link">@lang('translation.basic')
-                                            </a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="auth-signup-cover" class="nav-link">@lang('translation.cover')
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-
-                            <li class="nav-item">
-                                <a href="#sidebarResetPass" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarResetPass">@lang('translation.password-reset')
-
-                                </a>
-                                <div class="collapse menu-dropdown" id="sidebarResetPass">
-                                    <ul class="nav nav-sm flex-column">
-                                        <li class="nav-item">
-                                            <a href="auth-pass-reset-basic" class="nav-link">@lang('translation.basic')
-                                            </a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="auth-pass-reset-cover" class="nav-link">@lang('translation.cover')
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-
-                            <li class="nav-item">
-                                <a href="#sidebarchangePass" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarchangePass">@lang('translation.password-create')
-                                </a>
-                                <div class="collapse menu-dropdown" id="sidebarchangePass">
-                                    <ul class="nav nav-sm flex-column">
-                                        <li class="nav-item">
-                                            <a href="auth-pass-change-basic" class="nav-link">@lang('translation.basic')</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="auth-pass-change-cover" class="nav-link">@lang('translation.cover')</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-
-                            <li class="nav-item">
-                                <a href="#sidebarLockScreen" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarLockScreen">@lang('translation.lock-screen')
-
-                                </a>
-                                <div class="collapse menu-dropdown" id="sidebarLockScreen">
-                                    <ul class="nav nav-sm flex-column">
-                                        <li class="nav-item">
-                                            <a href="auth-lockscreen-basic" class="nav-link">@lang('translation.basic')
-                                            </a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="auth-lockscreen-cover" class="nav-link">@lang('translation.cover')
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-
-                            <li class="nav-item">
-                                <a href="#sidebarLogout" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarLogout">@lang('translation.logout')
-
-                                </a>
-                                <div class="collapse menu-dropdown" id="sidebarLogout">
-                                    <ul class="nav nav-sm flex-column">
-                                        <li class="nav-item">
-                                            <a href="auth-logout-basic" class="nav-link">@lang('translation.basic')
-                                            </a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="auth-logout-cover" class="nav-link">@lang('translation.cover')
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#sidebarSuccessMsg" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarSuccessMsg">@lang('translation.success-message')
-
-                                </a>
-                                <div class="collapse menu-dropdown" id="sidebarSuccessMsg">
-                                    <ul class="nav nav-sm flex-column">
-                                        <li class="nav-item">
-                                            <a href="auth-success-msg-basic" class="nav-link">@lang('translation.basic')
-                                            </a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="auth-success-msg-cover" class="nav-link">@lang('translation.cover')
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#sidebarTwoStep" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarTwoStep">@lang('translation.two-step-verification')
-
-                                </a>
-                                <div class="collapse menu-dropdown" id="sidebarTwoStep">
-                                    <ul class="nav nav-sm flex-column">
-                                        <li class="nav-item">
-                                            <a href="auth-twostep-basic" class="nav-link">@lang('translation.basic')
-                                            </a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="auth-twostep-cover" class="nav-link">@lang('translation.cover')
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#sidebarErrors" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarErrors">@lang('translation.errors')
-
-                                </a>
-                                <div class="collapse menu-dropdown" id="sidebarErrors">
-                                    <ul class="nav nav-sm flex-column">
-                                        <li class="nav-item">
-                                            <a href="auth-404-basic" class="nav-link">@lang('translation.404-basic')
-                                            </a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="auth-404-cover" class="nav-link">@lang('translation.404-cover')
-                                            </a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="auth-404-alt" class="nav-link">@lang('translation.404-alt')
-                                            </a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="auth-500" class="nav-link">@lang('translation.500')
-                                            </a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="auth-offline" class="nav-link">@lang('translation.offline-page')</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link menu-link" href="#sidebarPages" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarPages">
-                        <i class="mdi mdi-sticker-text-outline"></i> <span>@lang('translation.pages')
-                        </span>
-                    </a>
-                    <div class="collapse menu-dropdown" id="sidebarPages">
-                        <ul class="nav nav-sm flex-column">
-                            <li class="nav-item">
-                                <a href="pages-starter" class="nav-link">@lang('translation.starter')
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#sidebarProfile" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarProfile">@lang('translation.profile')
-
-                                </a>
-                                <div class="collapse menu-dropdown" id="sidebarProfile">
-                                    <ul class="nav nav-sm flex-column">
-                                        <li class="nav-item">
-                                            <a href="pages-profile" class="nav-link">@lang('translation.simple-page')
-                                            </a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="pages-profile-settings" class="nav-link">@lang('translation.settings')
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="nav-item">
-                                <a href="pages-team" class="nav-link">@lang('translation.team')
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="pages-timeline" class="nav-link">@lang('translation.timeline')
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="pages-faqs" class="nav-link">@lang('translation.faqs')
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="pages-pricing" class="nav-link">@lang('translation.pricing')
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="pages-gallery" class="nav-link">@lang('translation.gallery')
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="pages-maintenance" class="nav-link">@lang('translation.maintenance')
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="pages-coming-soon" class="nav-link">@lang('translation.coming-soon')
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="pages-sitemap" class="nav-link">@lang('translation.sitemap')
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="pages-search-results" class="nav-link">@lang('translation.search-results')
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="pages-privacy-policy" class="nav-link"><span data-key="t-privacy-policy">@lang('translation.privacy-policy')</span> <span class="badge badge-pill bg-success" data-key="t-new">@lang('translation.new')</span></a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="pages-term-conditions" class="nav-link"><span>Term & Conditions</span> <span class="badge badge-pill bg-success" data-key="t-new">@lang('translation.new')</span></a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link menu-link" href="#sidebarLanding" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarLanding">
-                        <i class="ri-rocket-line"></i> <span>@lang('translation.landing')</span>
-                    </a>
-                    <div class="collapse menu-dropdown" id="sidebarLanding">
-                        <ul class="nav nav-sm flex-column">
-                            <li class="nav-item">
-                                <a href="landing" class="nav-link"> @lang('translation.one-page') </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="nft-landing" class="nav-link"> @lang('translation.nft-landing') </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="job-landing" class="nav-link"><span>@lang('translation.job')</span> <span class="badge badge-pill bg-success">@lang('translation.new')</span></a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
+                <!-- BASE UI
                 <li class="menu-title"><i class="ri-more-fill"></i> <span>@lang('translation.components')
-                    </span></li>
-
+                    </span>
+                </li>
+                
                 <li class="nav-item">
                     <a class="nav-link menu-link" href="#sidebarUI" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarUI">
                         <i class="mdi mdi-cube-outline"></i> <span>@lang('translation.base-ui')
@@ -816,7 +991,8 @@
                         </div>
                     </div>
                 </li>
-
+                -->
+                <!-- Advanced UI
                 <li class="nav-item">
                     <a class="nav-link menu-link" href="#sidebarAdvanceUI" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarAdvanceUI">
                         <i class="mdi mdi-layers-triple-outline"></i> <span>@lang('translation.advance-ui')
@@ -864,14 +1040,16 @@
                         </ul>
                     </div>
                 </li>
-
+                -->
+                <!-- Widgets
                 <li class="nav-item">
                     <a class="nav-link menu-link" href="widgets">
                         <i class="mdi mdi-puzzle-outline"></i> <span>@lang('translation.widgets')
                         </span>
                     </a>
                 </li>
-
+                -->
+                <!-- Forms
                 <li class="nav-item">
                     <a class="nav-link menu-link" href="#sidebarForms" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarForms">
                         <i class="mdi mdi-form-select"></i> <span>@lang('translation.forms')
@@ -933,7 +1111,8 @@
                         </ul>
                     </div>
                 </li>
-
+                -->
+                <!-- Tables
                 <li class="nav-item">
                     <a class="nav-link menu-link" href="#sidebarTables" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarTables">
                         <i class="mdi mdi-grid-large"></i> <span>@lang('translation.tables')
@@ -959,7 +1138,8 @@
                         </ul>
                     </div>
                 </li>
-
+                -->
+                <!-- Charts
                 <li class="nav-item">
                     <a class="nav-link menu-link" href="#sidebarCharts" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarCharts">
                         <i class="mdi mdi-chart-donut"></i> <span>@lang('translation.charts')
@@ -1051,7 +1231,8 @@
                         </ul>
                     </div>
                 </li>
-
+                -->
+                <!-- Icons
                 <li class="nav-item">
                     <a class="nav-link menu-link" href="#sidebarIcons" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarIcons">
                         <i class="mdi mdi-android-studio"></i> <span>@lang('translation.icons')
@@ -1085,7 +1266,8 @@
                         </ul>
                     </div>
                 </li>
-
+                -->
+                <!-- Maps
                 <li class="nav-item">
                     <a class="nav-link menu-link" href="#sidebarMaps" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarMaps">
                         <i class="mdi mdi-map-marker-outline"></i> <span>@lang('translation.maps')
@@ -1111,7 +1293,9 @@
                         </ul>
                     </div>
                 </li>
-
+                -->
+               
+                <!-- Nav Item
                 <li class="nav-item">
                     <a class="nav-link menu-link" href="#sidebarMultilevel" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarMultilevel">
                         <i class="mdi mdi-share-variant-outline"></i> <span>@lang('translation.multi-level')
@@ -1156,9 +1340,10 @@
                         </ul>
                     </div>
                 </li>
-
+                -->
             </ul>
         </div>
+        
         <!-- Sidebar -->
     </div>
     <div class="sidebar-background"></div>
