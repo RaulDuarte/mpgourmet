@@ -10,7 +10,6 @@
 @endsection
 @section('content')
 
-
    <!-- Begin page -->
    <div class="layout-wrapper landing">
     <nav class="navbar navbar-expand-lg navbar-landing fixed-top" id="navbar">
@@ -56,7 +55,7 @@
                 
                 <div>
                     <a href="{{URL::asset('/auth-signup-basic')}}" style="font-weight: bold" class="btn btn-danger">Crie sua Conta</span></a>
-                    <a href="{{URL::asset('/auth-signup-basic')}}" style="font-weight: bold" class="btn btn-success">Área do Cliente</a>
+                    <a href="{{URL::asset('/index')}}" style="font-weight: bold" class="btn btn-success">Área do Cliente</a>
                 </div>
             </div>
 

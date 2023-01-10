@@ -1,6 +1,6 @@
 @extends('layouts.master-without-nav')
 @section('title')
-@lang('translation.signin')
+Login
 @endsection
 @section('content')
 <div class="auth-page-wrapper pt-5">
@@ -23,7 +23,7 @@
                     <div class="text-center mt-sm-5 mb-4 text-white-50">
                         <div class="mp-logo">
                             <a href="index" class="d-inline-block auth-logo">
-                                <img src="{{ URL::asset('assets/images/logos/mp-logo.png')}}" alt="" height="230">
+                                <img src="{{ URL::asset('assets/images/logos/mp-logo.png')}}" alt="" height="200">
                             </a>
                         </div>
                     </div>
@@ -37,7 +37,7 @@
 
                         <div class="card-body p-4">
                             <div class="text-center mt-2">
-                                <h4 class="text-danger">Seja Bem Vindo!</h4>
+                                <h4 class="text-dark">Seja Bem Vindo!</h4>
                                 <p class="text-muted">Logue-se para continuar.</p>
                             </div>
                             <div class="p-2 mt-4">
@@ -75,7 +75,7 @@
                                     </div>
 
                                     <div class="mt-4">
-                                        <button class="btn btn-danger w-100" type="submit">Entrar</button>
+                                        <button class="btn btn-warning w-100 font-size-b14" type="submit">Entrar</button>
                                     </div>
 
                                     <div class="mt-4 text-center">
@@ -89,7 +89,7 @@
                     <!-- end card -->
 
                     <div class="mt-4 text-center">
-                        <p class="mb-0">Não tem uma conta? <a href="register" class="fw-semibold text-primary text-decoration-underline"> Criar conta </a> </p>
+                        <p class="mb-0">Não tem uma conta? <a href="/auth-signup-basic" class="fw-semibold text-primary text-decoration-underline"> Criar conta </a> </p>
                     </div>
 
                 </div>
@@ -101,21 +101,22 @@
     <!-- end auth page content -->
 
     <!-- footer -->
-    <footer class="footer">
+    <fooer class="footer">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="text-center">
-                        <p class="mb-0 text-muted">&copy; <script>document.write(new Date().getFullYear())</script> M&P Gourmet Criado por Agência Hanne.</p>
+                        <p class="mb-0 text-muted"><script>document.write(new Date().getFullYear())</script> &copy; M&P Gourmet. Criado por Agência Hanne.</p>
                     </div>
                 </div>
             </div>
         </div>
-    </footer>
+    </fooer>
     <!-- end Footer -->
 </div>
 @endsection
 @section('script')
+<script src="{{ URL::asset('assets/libs/particles.js/particles.js.min.js') }}"></script>
 <script src="{{ URL::asset('assets/js/pages/particles.app.js') }}"></script>
 <script src="{{ URL::asset('assets/js/pages/password-addon.init.js') }}"></script>
 

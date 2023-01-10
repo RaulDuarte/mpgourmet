@@ -22,12 +22,11 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="text-center mt-sm-5 mb-4 text-white-50">
-                        <div>
+                        <div class="mp-logo">
                             <a href="index" class="d-inline-block auth-logo">
-                                <img src="{{ URL::asset('assets/images/logo-light.png') }}" alt="" height="20">
+                                <img src="{{ URL::asset('assets/images/logos/mp-logo.png') }}" alt="" height="200">
                             </a>
                         </div>
-                        <p class="mt-3 fs-15 fw-medium">Premium Admin & Dashboard Template</p>
                     </div>
                 </div>
             </div>
@@ -39,8 +38,8 @@
 
                         <div class="card-body p-4">
                             <div class="text-center mt-2">
-                                <h5 class="text-primary">Lock Screen</h5>
-                                <p class="text-muted">Enter your password to unlock the screen!</p>
+                                <h4 class="text-dark">Tela de Bloqueio</h4>
+                                <p class="text-muted">Insira a senha para entrar no sistema</p>
                             </div>
                             <div class="user-thumb text-center">
                                 <img src="{{ URL::asset('assets/images/users/avatar-1.jpg') }}" class="rounded-circle img-thumbnail avatar-lg" alt="thumbnail">
@@ -49,11 +48,11 @@
                             <div class="p-2 mt-4">
                                 <form>
                                     <div class="mb-3">
-                                        <label class="form-label" for="userpassword">Password</label>
-                                        <input type="password" class="form-control" id="userpassword" placeholder="Enter password" required>
+                                        <label class="form-label" for="userpassword">Senha</label>
+                                        <input type="password" class="form-control" id="userpassword" placeholder="Insira sua senha" required>
                                     </div>
                                     <div class="mb-2 mt-4">
-                                        <button class="btn btn-success w-100" type="submit">Unlock</button>
+                                        <button class="btn btn-warning fs-14 w-100" type="submit">Desbloquear</button>
                                     </div>
                                 </form><!-- end form -->
 
@@ -64,7 +63,7 @@
                     <!-- end card -->
 
                     <div class="mt-4 text-center">
-                        <p class="mb-0">Not you ? return <a href="auth-signin-basic" class="fw-semibold text-primary text-decoration-underline"> Signin </a> </p>
+                        <p class="mb-0">Não é você? Retorne para o <a href="auth-signin-basic" class="fw-semibold text-primary text-decoration-underline">Login</a> </p>
                     </div>
 
                 </div>
@@ -81,7 +80,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="text-center">
-                        <p class="mb-0 text-muted">&copy; <script>document.write(new Date().getFullYear())</script> Velzon. Crafted with <i class="mdi mdi-heart text-danger"></i> by Themesbrand</p>
+                        <p class="mb-0 text-muted"><script>document.write(new Date().getFullYear())</script> &copy; M&P Gourmet. Criado por Agência Hanne.</p>
                     </div>
                 </div>
             </div>

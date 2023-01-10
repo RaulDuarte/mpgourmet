@@ -5,7 +5,7 @@
 @section('content')
     <div class="position-relative mx-n4 mt-n4">
         <div class="profile-wid-bg profile-setting-img">
-            <img src="{{ URL::asset('assets/images/profile-bg.jpg') }}" class="profile-wid-img" alt="">
+            <img src="{{ URL::asset('/assets/images/login/scooping-the-food.jpg') }}" class="profile-wid-img" alt="">
             <div class="overlay-content">
                 <div class="text-end p-3">
                     
@@ -16,7 +16,27 @@
 
     <div class="row">
         <div class="col-xxl-3">
+
+
             <div class="card mt-n5">
+                <div class="card-body">
+                    <div class="d-flex align-items-center mb-5">
+                        <div class="flex-grow-1">
+                            <h5 class="card-title mb-0">Complete o Perfil</h5>
+                        </div>
+                        <div class="flex-shrink-0">
+                        </div>
+                    </div>
+                    <div class="progress animated-progress custom-progress progress-label">
+                        <div class="progress-bar bg-warning" role="progressbar" style="width: 30%" aria-valuenow="30"
+                            aria-valuemin="0" aria-valuemax="100">
+                            <!--<div class="label">30%</div>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
                 <div class="card-body p-4">
                     <div class="text-center">
                         <div class="profile-user position-relative d-inline-block mx-auto  mb-4 mt-3">
@@ -40,70 +60,46 @@
                 </div>
             </div>
             <!--end card-->
-            <div class="card">
-                <div class="card-body">
-                    <div class="d-flex align-items-center mb-5">
-                        <div class="flex-grow-1">
-                            <h5 class="card-title mb-0">Complete as Informações do Aluno</h5>
-                        </div>
-                        <div class="flex-shrink-0">
-                        </div>
-                    </div>
-                    <div class="progress animated-progress custom-progress progress-label">
-                        <div class="progress-bar bg-danger" role="progressbar" style="width: 30%" aria-valuenow="30"
-                            aria-valuemin="0" aria-valuemax="100">
-                            <div class="label">30%</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
             <div class="card">
                 <div class="card-body">
                     <div class="d-flex align-items-center mb-4">
                         <div class="flex-grow-1">
-                            <h5 class="card-title mb-0">Portfolio</h5>
+                            <h5 class="card-title mb-0">Informações do Responsável</h5>
                         </div>
                         <div class="flex-shrink-0">
-                            <a href="javascript:void(0);" class="badge bg-light text-primary fs-12"><i
-                                    class="ri-add-fill align-bottom me-1"></i> Add</a>
+                            
                         </div>
                     </div>
-                    <div class="mb-3 d-flex">
-                        <div class="avatar-xs d-block flex-shrink-0 me-3">
-                            <span class="avatar-title rounded-circle fs-16 bg-dark text-light shadow">
-                                <i class="ri-github-fill"></i>
-                            </span>
+
+                    <div class="col-lg-12">
+                        <div class="mb-3">
+                            <label for="JoiningdatInput" class="form-label">Nome</label>
+                            <input type="text" class="form-control" id="JoiningdatInput"  placeholder="Insira seu nome"/>
                         </div>
-                        <input type="email" class="form-control" id="gitUsername" placeholder="Username"
-                            value="@daveadame">
                     </div>
-                    <div class="mb-3 d-flex">
-                        <div class="avatar-xs d-block flex-shrink-0 me-3">
-                            <span class="avatar-title rounded-circle fs-16 bg-primary shadow">
-                                <i class="ri-global-fill"></i>
-                            </span>
+
+                    <div class="col-lg-12">
+                        <div class="mb-3">
+                            <label for="JoiningdatInput" class="form-label">Email</label>
+                            <input type="text" class="form-control" id="JoiningdatInput" placeholder="Insira seu email"/>
                         </div>
-                        <input type="text" class="form-control" id="websiteInput" placeholder="www.example.com"
-                            value="www.velzon.com">
                     </div>
-                    <div class="mb-3 d-flex">
-                        <div class="avatar-xs d-block flex-shrink-0 me-3">
-                            <span class="avatar-title rounded-circle fs-16 bg-success shadow">
-                                <i class="ri-dribbble-fill"></i>
-                            </span>
+
+                    <div class="col-lg-12">
+                        <div class="mb-3">
+                            <label for="JoiningdatInput" class="form-label">Telefone</label>
+                            <input type="text" class="form-control" id="JoiningdatInput" placeholder="Insira seu Telefone"/>
                         </div>
-                        <input type="text" class="form-control" id="dribbleName" placeholder="Username"
-                            value="@dave_adame">
                     </div>
-                    <div class="d-flex">
-                        <div class="avatar-xs d-block flex-shrink-0 me-3">
-                            <span class="avatar-title rounded-circle fs-16 bg-danger shadow">
-                                <i class="ri-pinterest-fill"></i>
-                            </span>
+
+                    <div class="col-lg-12">
+                        <div class="mb-3">
+                            <label for="JoiningdatInput" class="form-label">CPF</label>
+                            <input type="text" class="form-control" id="JoiningdatInput" placeholder="Insira seu CPF"/>
                         </div>
-                        <input type="text" class="form-control" id="pinterestName" placeholder="Username"
-                            value="Advance Dave">
                     </div>
+
                 </div>
             </div>
             <!--end card-->
@@ -114,15 +110,15 @@
                 <div class="card-header">
                     <ul class="nav nav-tabs-custom rounded card-header-tabs border-bottom-0" role="tablist">
                         <li class="nav-item">
-                            <a class="nav-link active" data-bs-toggle="tab" href="#personalDetails" role="tab">
+                            <a class="nav-link active text-dark" data-bs-toggle="tab" href="#personalDetails" role="tab">
                                 <i class="fas fa-home"></i>
-                                Personal Details
+                                Informações do Aluno
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="tab" href="#changePassword" role="tab">
+                            <a class="nav-link text-dark" data-bs-toggle="tab" href="#changePassword" role="tab">
                                 <i class="far fa-user"></i>
-                                Change Password
+                                Alterar Senha
                             </a>
                         </li>
                     </ul>
@@ -134,92 +130,72 @@
                                 <div class="row">
                                     <div class="col-lg-6">
                                         <div class="mb-3">
-                                            <label for="firstnameInput" class="form-label">First Name</label>
-                                            <input type="text" class="form-control" id="firstnameInput"
-                                                placeholder="Enter your firstname" value="Dave">
+                                            <label for="firstnameInput" class="form-label">Nome</label>
+                                            <input type="text" class="form-control" id="nomedoaluno"
+                                                placeholder="Enter your firstname">
                                         </div>
                                     </div>
                                     <!--end col-->
                                     <div class="col-lg-6">
                                         <div class="mb-3">
-                                            <label for="lastnameInput" class="form-label">Last
-                                                Name</label>
-                                            <input type="text" class="form-control" id="lastnameInput"
-                                                placeholder="Enter your lastname" value="Adame">
+                                            <label for="phonenumberInput" class="form-label">Registro Acadêmico</label>
+                                            <input type="text" class="form-control" id="registroacademico"
+                                                placeholder="Enter your phone number">
                                         </div>
                                     </div>
                                     <!--end col-->
                                     <div class="col-lg-6">
                                         <div class="mb-3">
-                                            <label for="phonenumberInput" class="form-label">Phone
-                                                Number</label>
-                                            <input type="text" class="form-control" id="phonenumberInput"
-                                                placeholder="Enter your phone number" value="+(1) 987 6543">
-                                        </div>
-                                    </div>
-                                    <!--end col-->
-                                    <div class="col-lg-6">
-                                        <div class="mb-3">
-                                            <label for="emailInput" class="form-label">Email
-                                                Address</label>
-                                            <input type="email" class="form-control" id="emailInput"
-                                                placeholder="Enter your email" value="daveadame@velzon.com">
-                                        </div>
-                                    </div>
-                                    <!--end col-->
-                                    <div class="col-lg-12">
-                                        <div class="mb-3">
-                                            <label for="JoiningdatInput" class="form-label">Joining
-                                                Date</label>
+                                            <label for="JoiningdatInput" class="form-label">Nascimento</label>
                                             <input type="text" class="form-control" data-provider="flatpickr"
                                                 id="JoiningdatInput" data-date-format="d M, Y"
                                                 data-deafult-date="24 Nov, 2021" placeholder="Select date" />
                                         </div>
                                     </div>
                                     <!--end col-->
+                                    <div class="col-lg-6">
+                                        <div class="mb-3">
+                                            <label for="phonenumberInput" class="form-label">Turma</label>
+                                            <input type="text" class="form-control" id="registroacademico"
+                                                placeholder="Enter your phone number">
+                                        </div>
+                                    </div>
+                                     <!--end col-->
+                                     <div class="col-lg-6">
+                                        <div class="mb-3">
+                                            <label for="phonenumberInput" class="form-label">Período</label>
+                                            <input type="text" class="form-control" id="registroacademico"
+                                                placeholder="Enter your phone number">
+                                        </div>
+                                    </div>
+                                    <!--end col-->
+                                    <div class="col-lg-6">
+                                        <div class="mb-3">
+                                            <label for="phonenumberInput" class="form-label">Unidade</label>
+                                            <input type="text" class="form-control" id="registroacademico"
+                                                placeholder="Enter your phone number">
+                                        </div>
+                                    </div>
+                                    <!--end col-->
                                     <div class="col-lg-12">
                                         <div class="mb-3">
-                                            <label for="skillsInput" class="form-label">Skills</label>
-                                            <select class="form-control" name="skillsInput" data-choices
-                                                data-choices-removeItem multiple id="skillsInput">
-                                                <option value="illustrator">Illustrator</option>
-                                                <option value="photoshop">Photoshop</option>
-                                                <option value="css">CSS</option>
-                                                <option value="html">HTML</option>
-                                                <option value="javascript" selected>Javascript</option>
-                                                <option value="python">Python</option>
-                                                <option value="php">PHP</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <!--end col-->
-                                    <div class="col-lg-6">
-                                        <div class="mb-3">
-                                            <label for="designationInput" class="form-label">Designation</label>
-                                            <input type="text" class="form-control" id="designationInput"
-                                                placeholder="Designation" value="Lead Designer / Developer">
-                                        </div>
-                                    </div>
-                                    <!--end col-->
-                                    <div class="col-lg-6">
-                                        <div class="mb-3">
-                                            <label for="websiteInput1" class="form-label">Website</label>
-                                            <input type="text" class="form-control" id="websiteInput1"
-                                                placeholder="www.example.com" value="www.velzon.com" />
+                                            <label for="phonenumberInput" class="form-label">Endereço</label>
+                                            <input type="text" class="form-control" id="registroacademico"
+                                                placeholder="Enter your phone number">
                                         </div>
                                     </div>
                                     <!--end col-->
                                     <div class="col-lg-4">
                                         <div class="mb-3">
-                                            <label for="cityInput" class="form-label">City</label>
+                                            <label for="cityInput" class="form-label">Cidade</label>
                                             <input type="text" class="form-control" id="cityInput" placeholder="City"
-                                                value="California" />
+                                                value="" />
                                         </div>
                                     </div>
                                     <!--end col-->
                                     <div class="col-lg-4">
                                         <div class="mb-3">
-                                            <label for="countryInput" class="form-label">Country</label>
+                                            <label for="countryInput" class="form-label">Estado</label>
                                             <input type="text" class="form-control" id="countryInput"
                                                 placeholder="Country" value="United States" />
                                         </div>
@@ -227,26 +203,46 @@
                                     <!--end col-->
                                     <div class="col-lg-4">
                                         <div class="mb-3">
-                                            <label for="zipcodeInput" class="form-label">Zip
-                                                Code</label>
+                                            <label for="zipcodeInput" class="form-label">CEP</label>
                                             <input type="text" class="form-control" minlength="5" maxlength="6"
                                                 id="zipcodeInput" placeholder="Enter zipcode" value="90011">
                                         </div>
                                     </div>
+
+
+
+                                    <div class="col-lg-12">
+                                        <div class="mb-3">
+                                            <label for="skillsInput" class="form-label ">Alergias e Intolerâncias</label>
+                                            <select class="form-control" name="skillsInput" data-choices
+                                                data-choices-removeItem multiple id="skillsInput">
+                                                <option value="alergia01">Alergia 01</option>
+                                                <option value="alergia02">Alergia 02</option>
+                                                <option value="alergia03">Alergia 03</option>
+                                                <option value="alergia04">Alergia 04</option>
+                                                <option value="alergia05" selected>Alergia 05</option>
+                                                <option value="alergia06">Alergia 06</option>
+                                                <option value="alergia07">Alergia 07</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <!--end col-->
+                                    
+                                    
                                     <!--end col-->
                                     <div class="col-lg-12">
                                         <div class="mb-3 pb-2">
                                             <label for="exampleFormControlTextarea"
-                                                class="form-label">Description</label>
+                                                class="form-label">Observações importantes sobre o aluno</label>
                                             <textarea class="form-control" id="exampleFormControlTextarea" placeholder="Enter your description"
-                                                rows="3">Hi I'm Anna Adame,It will be as simple as Occidental; in fact, it will be Occidental. To an English person, it will seem like simplified English, as a skeptical Cambridge friend of mine told me what Occidental is European languages are members of the same family.</textarea>
+                                                rows="3">Consectetur adipiscing elit. Aliquam sed orci finibus, fringilla urna ac, ullamcorper risus. Curabitur eu dui ut elit commodo luctus. Praesent vestibulum magna non mollis ultrices. Morbi ipsum ipsum, tempor eu nunc vel, ultrices semper ligula. Aenean id volutpat justo, quis blandit erat. Ut non enim diam.</textarea>
                                         </div>
                                     </div>
                                     <!--end col-->
                                     <div class="col-lg-12">
                                         <div class="hstack gap-2 justify-content-end">
-                                            <button type="submit" class="btn btn-primary">Updates</button>
-                                            <button type="button" class="btn btn-soft-success">Cancel</button>
+                                            <button type="submit" class="btn btn-success">Salvar</button>
+                                            <a class="btn btn-danger" href="{{"/pages-profile"}}" role="button">Cancelar</a>
                                         </div>
                                     </div>
                                     <!--end col-->
@@ -260,43 +256,38 @@
                                 <div class="row g-2">
                                     <div class="col-lg-4">
                                         <div>
-                                            <label for="oldpasswordInput" class="form-label">Old
-                                                Password*</label>
+                                            <label for="oldpasswordInput" class="form-label">Senha Atual*</label>
                                             <input type="password" class="form-control" id="oldpasswordInput"
-                                                placeholder="Enter current password">
+                                                placeholder="Insira a senha atual">
                                         </div>
                                     </div>
                                     <!--end col-->
                                     <div class="col-lg-4">
                                         <div>
-                                            <label for="newpasswordInput" class="form-label">New
-                                                Password*</label>
+                                            <label for="newpasswordInput" class="form-label">Nova Senha*</label>
                                             <input type="password" class="form-control" id="newpasswordInput"
-                                                placeholder="Enter new password">
+                                                placeholder="Insira a nova senha">
                                         </div>
                                     </div>
                                     <!--end col-->
                                     <div class="col-lg-4">
                                         <div>
-                                            <label for="confirmpasswordInput" class="form-label">Confirm
-                                                Password*</label>
+                                            <label for="confirmpasswordInput" class="form-label">Confirme a Senha*</label>
                                             <input type="password" class="form-control" id="confirmpasswordInput"
-                                                placeholder="Confirm password">
+                                                placeholder="Confirme a senha">
                                         </div>
                                     </div>
                                     <!--end col-->
                                     <div class="col-lg-12">
                                         <div class="mb-3">
                                             <a href="javascript:void(0);"
-                                                class="link-primary text-decoration-underline">Forgot
-                                                Password ?</a>
+                                                class="link-primary text-decoration-underline">Esqueceu a Senha?</a>
                                         </div>
                                     </div>
                                     <!--end col-->
                                     <div class="col-lg-12">
                                         <div class="text-end">
-                                            <button type="submit" class="btn btn-success">Change
-                                                Password</button>
+                                            <button type="submit" class="btn btn-success">Salvar</button>
                                         </div>
                                     </div>
                                     <!--end col-->

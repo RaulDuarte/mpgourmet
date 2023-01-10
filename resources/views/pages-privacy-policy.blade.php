@@ -1,9 +1,13 @@
 @extends('layouts.master')
-@section('title') Privacy Policy @endsection
+@section('title') Política de Privacidade @endsection
 @section('content')
 @component('components.breadcrumb')
-@slot('li_1') Pages @endslot
-@slot('title') Privacy Policy @endslot
+@slot('li_1') 
+
+@endslot
+@slot('title') 
+
+@endslot
 @endcomponent
 
 <div class="row justify-content-center">
@@ -12,8 +16,8 @@
             <div class="bg-soft-warning position-relative">
                 <div class="card-body p-5">
                     <div class="text-center">
-                        <h3 class="fw-semibold">Privacy Policy</h3>
-                        <p class="mb-0 text-muted">Last update: 16 Sept, 2022</p>
+                        <h3 class="fw-semibold">Política de Privacidade</h3>
+                        <p class="mb-0 text-muted">Ùtima Atualização: 16 de Setembro, 2022</p>
                     </div>
                 </div>
                 <div class="shape">
@@ -31,11 +35,9 @@
             </div>
             <div class="card-body p-4">
                 <div class="d-flex">
-                    <div class="flex-shrink-0 me-3">
-                        <i data-feather="check-circle" class="text-success icon-dual-success icon-xs"></i>
-                    </div>
+                    
                     <div class="flex-grow-1">
-                        <h5 class="fw-semibold">Privacy Policy for velzon</h5>
+                        <h5 class="fw-semibold">Política de Privacidade para M&P Gourmet</h5>
                         <p class="text-muted">At Website Name, accessible at Website.com, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by Website Name and how we use it.</p>
                         <p class="text-muted">If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact us through email at Email@Website.com</p>
                         <p class="text-muted">This privacy policy applies only to our online activities and is valid for visitors to our website with regards to the information that they shared and/or collect in Website Name. This policy is not applicable to any information collected offline or via channels other than this website.</p>
@@ -58,11 +60,9 @@
                 </div>
 
                 <div class="d-flex">
-                    <div class="flex-shrink-0 me-3">
-                        <i data-feather="check-circle" class="text-success icon-dual-success icon-xs"></i>
-                    </div>
+                    
                     <div class="flex-grow-1">
-                        <h5 class="fw-semibold">How we use your information</h5>
+                        <h5 class="fw-semibold">Como nós usaremos suas informações</h5>
                         <p class="text-muted">If you contact us directly, we may receive additional information about you such as your name, email address, phone number, the contents of the message and/or attachments you may send us, and any other information you may choose to provide.</p>
                         <p class="text-muted">Communicate with you, either directly or through one of our partners, including for customer service, to provide you with updates and other information relating to the website, and for marketing and promotional purposes.</p>
                         <p class="text-muted">When you register for an Account, we may ask for your contact information, including items such as name, company name, address, email address, and telephone number.</p>
@@ -92,9 +92,7 @@
                 </div>
 
                 <div class="d-flex">
-                    <div class="flex-shrink-0 me-3">
-                        <i data-feather="check-circle" class="text-success icon-dual-success icon-xs"></i>
-                    </div>
+                    
                     <div class="flex-grow-1">
                         <p class="text-muted">Some of advertisers on our site may use cookies and web beacons. Our advertising partners are listed below. Each of our advertising partners has their own Privacy Policy for their policies on user data. For easier access, we hyperlinked to their Privacy Policies below.</p>
                         <p class="text-muted"><b>Website Name's Privacy Policy does not apply to other advertisers or websites. Thus, we are advising you to consult the respective Privacy Policies of these third-party ad servers for more detailed information. It may include their practices and instructions about how to opt-out of certain options. You may find a complete list of these Privacy Policies and their links here: Privacy Policy Links.</b></p>
@@ -102,11 +100,12 @@
                 </div>
 
 
-                <div class="text-end">
-                    <a href="#!" class="btn btn-danger">I'm Understand</a>
+                <div class="text-end hstack gap-2 justify-content-end mt-3">
+                    <a href="#!" class="btn btn-success">Estou Ciente e Concordo</a>
+                    <a href="#!" class="btn btn-outline-danger shadow-none"><i class="ri-close-line align-bottom me-1"></i> Não Concordo</a>
                 </div>
             </div>
-        </div>
+        </div>  
     </div>
 </div>
 

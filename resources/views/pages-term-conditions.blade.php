@@ -2,8 +2,10 @@
 @section('title') Term & Conditions @endsection
 @section('content')
 @component('components.breadcrumb')
-@slot('li_1') Pages @endslot
-@slot('title') Term & Conditions @endslot
+@slot('li_1') 
+@endslot
+@slot('title') 
+@endslot
 @endcomponent
 
 <div class="row justify-content-center">
@@ -12,8 +14,8 @@
             <div class="bg-soft-warning position-relative">
                 <div class="card-body p-5">
                     <div class="text-center">
-                        <h3 class="fw-semibold">Term & Conditions</h3>
-                        <p class="mb-0 text-muted">Last update: 16 Sept, 2022</p>
+                        <h3 class="fw-semibold">Termos e Condições</h3>
+                        <p class="mb-0 text-muted">Ùltima Atualização: 16 de Setembro, 2022</p>
                     </div>
                 </div>
                 <div class="shape">
@@ -31,14 +33,14 @@
             </div>
             <div class="card-body p-4">
                 <div>
-                    <h5 class="fw-semibold">Welcome to Velzon!</h5>
+                    <h5 class="fw-semibold">Bem vindo(a) à M&P Gourmet</h5>
                     <p class="text-muted">These terms and conditions outline the rules and regulations for the use of Company Name's Website, located at Website.com.</p>
                     <p class="text-muted">By accessing this website we assume you accept these terms and conditions. Do not continue to use Website Name if you do not agree to take all of the terms and conditions stated on this page.</p>
                     <p class="text-muted">Most interactive websites use cookies to let us retrieve the user's details for each visit. Cookies are used by our website to enable the functionality of certain areas to make it easier for people visiting our website. Some of our affiliate/advertising partners may also use cookies.</p>
                 </div>
 
                 <div>
-                    <h5 class="fw-semibold">License</h5>
+                    <h5 class="fw-semibold">Termos e Condições de Uso</h5>
                     <p class="text-muted">Unless otherwise stated, Company Name and/or its licensors own the intellectual property rights for all material on Website Name. All intellectual property rights are reserved. You may access this from Website Name for your own personal use subjected to restrictions set in these terms and conditions.</p>
                     <p class="text-muted">You must not:</p>
                     <ul class="text-muted vstack gap-2">
@@ -94,8 +96,8 @@
 
 
                 <div class="text-end hstack gap-2 justify-content-end">
-                    <a href="#!" class="btn btn-success">Accept</a>
-                    <a href="#!" class="btn btn-outline-danger shadow-none"><i class="ri-close-line align-bottom me-1"></i> Decline</a>
+                    <a href="#!" class="btn btn-success">Estou Ciente e Concordo</a>
+                    <a href="#!" class="btn btn-outline-danger shadow-none"><i class="ri-close-line align-bottom me-1"></i> Não Concordo</a>
                 </div>
             </div>
         </div>

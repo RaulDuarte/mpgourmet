@@ -35,35 +35,35 @@
                 
                 <li class="nav-item">
                     <a class="nav-link menu-link" href="index" data-bs-toggle="none" role="button" aria-expanded="false" aria-controls="sidebarDashboards">
-                        <i class="mdi mdi-speedometer"></i> <span>@lang('translation.dashboards')
+                        <i class="las la-chart-pie"></i> <span>@lang('translation.dashboards')
                         </span>
                     </a>
                 </li>
 
                 <li class="nav-item">
                     <a class="nav-link menu-link" href="apps-ecommerce-customers" data-bs-toggle="none" role="button" aria-expanded="false" aria-controls="sidebarDashboards">
-                        <i class="mdi mdi-speedometer"></i> <span>@lang('translation.clients')
+                        <i class="las la-user-friends"></i> <span>@lang('translation.clients')
                         </span>
                     </a>
                 </li>
 
                 <li class="nav-item">
                     <a class="nav-link menu-link" href="apps-ecommerce-customers" data-bs-toggle="none" role="button" aria-expanded="false" aria-controls="sidebarDashboards">
-                        <i class="mdi mdi-speedometer"></i> <span>@lang('translation.students')
+                        <i class="las la-graduation-cap"></i> <span>@lang('translation.students')
                         </span>
                     </a>
                 </li>
 
                 <li class="nav-item">
                     <a class="nav-link menu-link" href="apps-ecommerce-orders" data-bs-toggle="none" role="button" aria-expanded="false" aria-controls="sidebarDashboards">
-                        <i class="mdi mdi-speedometer"></i> <span>@lang('translation.orders')
+                        <i class="las la-shopping-cart"></i> <span>@lang('translation.orders')
                         </span>
                     </a>
                 </li>
 
                 <li class="nav-item">
                     <a class="nav-link menu-link" href="apps-ecommerce-products" data-bs-toggle="none" role="button" aria-expanded="false" aria-controls="sidebarDashboards">
-                        <i class="mdi mdi-speedometer"></i> <span>@lang('translation.packages')
+                        <i class="las la-box"></i> <span>@lang('translation.packages')
                         </span>
                     </a>
                 </li>
@@ -157,39 +157,40 @@
 
                 <li class="nav-item">
                     <a class="nav-link menu-link" href="pages-profile" data-bs-toggle="none" role="button" aria-expanded="false" aria-controls="sidebarDashboards">
-                        <i class="mdi mdi-speedometer"></i> <span>@lang('translation.profile')
+                        <i class="las la-user-circle"></i> <span>@lang('translation.profile')
                         </span>
                     </a>
                 </li>
 
                 <li class="nav-item">
                     <a class="nav-link menu-link" href="pages-pricing" data-bs-toggle="none" role="button" aria-expanded="false" aria-controls="sidebarDashboards">
-                        <i class="mdi mdi-speedometer"></i> <span>@lang('translation.month-packages')
+                        <i class="las la-file-contract"></i> <span>@lang('translation.month-packages')
                         </span>
                     </a>
                 </li>
 
                 <li class="nav-item">
                     <a class="nav-link menu-link" href="apps-ecommerce-cart" data-bs-toggle="none" role="button" aria-expanded="false" aria-controls="sidebarDashboards">
-                        <i class="mdi mdi-speedometer"></i> <span>@lang('translation.detached-packages')
+                        <i class="las la-utensils"></i> <span>@lang('translation.detached-packages')
                         </span>
                     </a>
                 </li>
 
                 <li class="nav-item">
                     <a class="nav-link menu-link" href="pages-privacy-policy" data-bs-toggle="none" role="button" aria-expanded="false" aria-controls="sidebarDashboards">
-                        <i class="mdi mdi-speedometer"></i> <span>@lang('translation.privacy-policy')
+                        <i class="las la-user-shield"></i> <span>@lang('translation.privacy-policy')
                         </span>
                     </a>
                 </li>
 
                 <li class="nav-item">
                     <a class="nav-link menu-link" href="pages-term-conditions" data-bs-toggle="none" role="button" aria-expanded="false" aria-controls="sidebarDashboards">
-                        <i class="mdi mdi-speedometer"></i> <span>@lang('translation.terms-conditions')
+                        <i class="las la-exclamation-triangle"></i> <span>@lang('translation.terms-conditions')
                         </span>
                     </a>
                 </li>
 
+                <!--
                 <li class="nav-item">
                     <a class="nav-link menu-link" href="#sidebarAuth" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarAuth">
                         <i class="mdi mdi-account-circle-outline"></i> <span>@lang('translation.authentication')
@@ -207,12 +208,12 @@
                                             <a href="auth-signin-basic" class="nav-link">@lang('translation.basic')
                                             </a>
                                         </li>
-                                        <!-- Signin Cover
+                                        
                                         <li class="nav-item">
                                             <a href="auth-signin-cover" class="nav-link">@lang('translation.cover')
                                             </a>
                                         </li>
-                                        -->
+                                        
                                     </ul>
                                 </div>
                             </li>
@@ -226,12 +227,12 @@
                                             <a href="auth-signup-basic" class="nav-link">@lang('translation.basic')
                                             </a>
                                         </li>
-                                        <!-- Signup Cover
+                                      
                                         <li class="nav-item">
                                             <a href="auth-signup-cover" class="nav-link">@lang('translation.cover')
                                             </a>
                                         </li>
-                                        -->
+                                        
                                     </ul>
                                 </div>
                             </li>
@@ -246,12 +247,12 @@
                                             <a href="auth-pass-reset-basic" class="nav-link">@lang('translation.basic')
                                             </a>
                                         </li>
-                                        <!-- Reset Basic
+                                       
                                         <li class="nav-item">
                                             <a href="auth-pass-reset-cover" class="nav-link">@lang('translation.cover')
                                             </a>
                                         </li>
-                                        -->
+                                        
                                     </ul>
                                 </div>
                             </li>
@@ -264,11 +265,11 @@
                                         <li class="nav-item">
                                             <a href="auth-pass-change-basic" class="nav-link">@lang('translation.basic')</a>
                                         </li>
-                                        <!-- Change Password
+                                       
                                         <li class="nav-item">
                                             <a href="auth-pass-change-cover" class="nav-link">@lang('translation.cover')</a>
                                         </li>
-                                        -->
+                                   
                                     </ul>
                                 </div>
                             </li>
@@ -283,12 +284,12 @@
                                             <a href="auth-lockscreen-basic" class="nav-link">@lang('translation.basic')
                                             </a>
                                         </li>
-                                        <!-- Lockscreen Cover
+                                      
                                         <li class="nav-item">
                                             <a href="auth-lockscreen-cover" class="nav-link">@lang('translation.cover')
                                             </a>
                                         </li>
-                                        -->
+                                  
                                     </ul>
                                 </div>
                             </li>
@@ -303,16 +304,16 @@
                                             <a href="auth-logout-basic" class="nav-link">@lang('translation.basic')
                                             </a>
                                         </li>
-                                        <!-- Logout Cover
+                                        
                                         <li class="nav-item">
                                             <a href="auth-logout-cover" class="nav-link">@lang('translation.cover')
                                             </a>
                                         </li>
-                                        -->
+                                        
                                     </ul>
                                 </div>
                             </li>
-                            <!-- Success Message
+                         
                             <li class="nav-item">
                                 <a href="#sidebarSuccessMsg" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarSuccessMsg">@lang('translation.success-message')
 
@@ -330,8 +331,8 @@
                                     </ul>
                                 </div>
                             </li>
-                            -->
-                            <!-- Two Step Verification
+                        
+                          
                             <li class="nav-item">
                                 <a href="#sidebarTwoStep" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarTwoStep">@lang('translation.two-step-verification')
 
@@ -349,7 +350,7 @@
                                     </ul>
                                 </div>
                             </li>
-                            -->
+                            
                             <li class="nav-item">
                                 <a href="#sidebarErrors" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarErrors">@lang('translation.errors')
 
@@ -360,37 +361,37 @@
                                             <a href="auth-404-basic" class="nav-link">@lang('translation.404-basic')
                                             </a>
                                         </li>
-                                        <!-- Error 404 Cover
+                                        
                                         <li class="nav-item">
                                             <a href="auth-404-cover" class="nav-link">@lang('translation.404-cover')
                                             </a>
                                         </li>
-                                        -->
-                                        <!-- Error 404 Alt
+                                        
                                         <li class="nav-item">
                                             <a href="auth-404-alt" class="nav-link">@lang('translation.404-alt')
                                             </a>
                                         </li>
-                                        -->
-                                        <!-- Error 500
+                                        
+                                
                                         <li class="nav-item">
                                             <a href="auth-500" class="nav-link">@lang('translation.500')
                                             </a>
                                         </li>
-                                        -->
-                                        <!-- Offline Page
+                                        
+                                     
                                         <li class="nav-item">
                                             <a href="auth-offline" class="nav-link">@lang('translation.offline-page')</a>
                                         </li>
-                                        -->
+                                        
                                     </ul>
                                 </div>
                             </li>
                         </ul>
                     </div>
                 </li>
+                -->
 
-        
+                <!--
                 <li class="nav-item">
                     <a class="nav-link menu-link" href="#sidebarPages" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarPages">
                         <i class="mdi mdi-sticker-text-outline"></i> <span>@lang('translation.pages')
@@ -398,12 +399,12 @@
                     </a>
                     <div class="collapse menu-dropdown" id="sidebarPages">
                         <ul class="nav nav-sm flex-column">
-                            <!-- Starter
+                          
                             <li class="nav-item">
                                 <a href="pages-starter" class="nav-link">@lang('translation.starter')
                                 </a>
                             </li>
-                            -->
+                     
                             <li class="nav-item">
                                 <a href="#sidebarProfile" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarProfile">@lang('translation.profile')
 
@@ -425,52 +426,51 @@
                                 <a href="pages-team" class="nav-link">@lang('translation.team')
                                 </a>
                             </li>
-                            <!-- Timeline
+                    
                             <li class="nav-item">
                                 <a href="pages-timeline" class="nav-link">@lang('translation.timeline')
                                 </a>
                             </li>
-                            -->
-                            <!-- Faqs
+                            
+                     
                             <li class="nav-item">
                                 <a href="pages-faqs" class="nav-link">@lang('translation.faqs')
                                 </a>
                             </li>
-                            -->
+                            
                             <li class="nav-item">
                                 <a href="pages-pricing" class="nav-link">@lang('translation.pricing')
                                 </a>
                             </li>
-                            <!-- Gallery
+                       
                             <li class="nav-item">
                                 <a href="pages-gallery" class="nav-link">@lang('translation.gallery')
                                 </a>
                             </li>
-                            -->
-                            <!-- Maintenance
+                            
+                      
                             <li class="nav-item">
                                 <a href="pages-maintenance" class="nav-link">@lang('translation.maintenance')
                                 </a>
                             </li>
-                            -->
-                            <!-- Coming Soon
+                            
+                      
                             <li class="nav-item">
                                 <a href="pages-coming-soon" class="nav-link">@lang('translation.coming-soon')
                                 </a>
                             </li>
-                            -->
-                            <!-- Sitemap
+                      
                             <li class="nav-item">
                                 <a href="pages-sitemap" class="nav-link">@lang('translation.sitemap')
                                 </a>
                             </li>
-                            -->
-                            <!-- Search Results
+                            
+                       
                             <li class="nav-item">
                                 <a href="pages-search-results" class="nav-link">@lang('translation.search-results')
                                 </a>
                             </li>
-                            -->
+                            
                             <li class="nav-item">
                                 <a href="pages-privacy-policy" class="nav-link"><span data-key="t-privacy-policy">@lang('translation.privacy-policy')</span> <span class="badge badge-pill bg-success" data-key="t-new">@lang('translation.new')</span></a>
                             </li>
@@ -480,7 +480,9 @@
                         </ul>
                     </div>
                 </li>
-            
+                -->
+
+                <!--
                 <li class="nav-item">
                     <a class="nav-link menu-link" href="#sidebarLanding" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarLanding">
                         <i class="ri-rocket-line"></i> <span>@lang('translation.landing')</span>
@@ -490,20 +492,21 @@
                             <li class="nav-item">
                                 <a href="landing" class="nav-link"> @lang('translation.one-page') </a>
                             </li>
-                            <!-- NFT Page
+                          
                             <li class="nav-item">
                                 <a href="nft-landing" class="nav-link"> @lang('translation.nft-landing') </a>
                             </li>
-                            -->
-                            <!-- Job Page
+                       
                             <li class="nav-item">
                                 <a href="job-landing" class="nav-link"><span>@lang('translation.job')</span> <span class="badge badge-pill bg-success">@lang('translation.new')</span></a>
                             </li>
-                            -->
+                            
                         </ul>
                     </div>
                 </li>
-
+                -->
+                
+                <!--
                 <li class="nav-item">
                     <a class="nav-link menu-link" href="#sidebarApps" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarApps">
                         <i class="mdi mdi-view-grid-plus-outline"></i> <span>@lang('translation.apps')
@@ -511,19 +514,17 @@
                     </a>
                     <div class="collapse menu-dropdown" id="sidebarApps">
                         <ul class="nav nav-sm flex-column">
-                            <!-- Apps Calendar
+                        
                             <li class="nav-item">
                                 <a href="apps-calendar" class="nav-link">@lang('translation.calendar')
                                 </a>
                             </li>
-                            -->
-                            <!-- Apps Chat
+                        
                             <li class="nav-item">
                                 <a href="apps-chat" class="nav-link">@lang('translation.chat')
                                 </a>
                             </li>
-                            -->
-                            <!--
+                         
                             <li class="nav-item">
                                 <a href="#sidebarEmail" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarEmail">
                                     @lang('translation.email')
@@ -552,7 +553,7 @@
                                 </div>
 
                             </li>
-                            -->
+                            
                             <li class="nav-item">
                                 <a href="#sidebarEcommerce" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarEcommerce">@lang('translation.ecommerce')
 
@@ -563,12 +564,12 @@
                                             <a href="apps-ecommerce-products" class="nav-link">@lang('translation.products')
                                             </a>
                                         </li>
-                                        <!-- Product Details
+                                     
                                         <li class="nav-item">
                                             <a href="apps-ecommerce-product-details" class="nav-link">@lang('translation.product-Details')
                                             </a>
                                         </li>
-                                        -->
+                                        
                                         <li class="nav-item">
                                             <a href="apps-ecommerce-add-product" class="nav-link">@lang('translation.create-product')
                                             </a>
@@ -594,21 +595,22 @@
                                             <a href="apps-ecommerce-checkout" class="nav-link">@lang('translation.checkout')
                                             </a>
                                         </li>
-                                        <!-- Sellers
+                                        
                                         <li class="nav-item">
                                             <a href="apps-ecommerce-sellers" class="nav-link">@lang('translation.sellers')
                                             </a>
                                         </li>
-                                        -->
-                                        <!-- Seller Details
+                                        
+                                        
                                         <li class="nav-item">
                                             <a href="apps-ecommerce-seller-details" class="nav-link">@lang('translation.sellers-details')
                                             </a>
                                         </li>
-                                        -->
+                                    
                                     </ul>
                                 </div>
                             </li>
+                            -->
                             <!-- Apps Projects
                             <li class="nav-item">
                                 <a href="#sidebarProjects" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarProjects">@lang('translation.projects')

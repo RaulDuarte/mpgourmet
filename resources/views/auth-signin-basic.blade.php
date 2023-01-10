@@ -1,6 +1,6 @@
 @extends('layouts.master-without-nav')
 @section('title')
-    @lang('translation.signin')
+    Login
 @endsection
 @section('content')
 
@@ -40,8 +40,8 @@
 
                             <div class="card-body p-4">
                                 <div class="text-center mt-2">
-                                    <h5 class="text-primary">Seja Bem Vindo!</h5>
-                                    <p class="text-muted">Logue-se para entrar no sistema.</p>
+                                    <h4 class="text-dark">Seja Bem Vindo!</h4>
+                                    <p class="text-muted">Logue-se para continuar.</p>
                                 </div>
                                 <div class="p-2 mt-4">
                                     <form action="index">
@@ -74,7 +74,7 @@
                                         </div>
 
                                         <div class="mt-4">
-                                            <button class="btn btn-success w-100" type="submit">Entrar</button>
+                                            <button class="btn btn-warning w-100 font-size-b14" type="submit">Entrar</button>
                                         </div>
 
                                         <div class="mt-4 text-center">
@@ -107,9 +107,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="text-center">
-                            <script>
-                                document.write(new Date().getFullYear())
-                            </script> @ M&P Gourmet. Criado por Agência Hanne.</p>
+                            <p class="mb-0 text-muted"><script>document.write(new Date().getFullYear())</script> &copy; M&P Gourmet. Criado por Agência Hanne.</p>
                         </div>
                     </div>
                 </div>

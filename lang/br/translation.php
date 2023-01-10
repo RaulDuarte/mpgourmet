@@ -234,10 +234,10 @@ return [
     "packages" => "Pacotes",
     "students" => "Alunos",
 
-    "month-packages" => "Contratos Mensais",
-    "detached-packages" => "Refeições Avulsas",
+    "month-packages" => "Contrato Mensal",
+    "detached-packages" => "Refeição Avulsa",
     "quick-access" => "Acesso Rápido",
-
+    "singlemeal" => "Refeição Avulsa",
 ];
 ?>
 

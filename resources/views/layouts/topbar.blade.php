@@ -401,18 +401,18 @@
                 <div class="dropdown topbar-head-dropdown ms-1 header-item" id="notificationDropdown">
                     <button type="button" class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle shadow-none" id="page-header-notifications-dropdown" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-haspopup="true" aria-expanded="false">
                         <i class='bx bx-bell fs-22'></i>
-                        <span class="position-absolute topbar-badge fs-10 translate-middle badge rounded-pill bg-danger">3<span class="visually-hidden">unread messages</span></span>
+                        <span class="position-absolute topbar-badge fs-10 translate-middle badge rounded-pill bg-warning">3<span class="visually-hidden">não lidas</span></span>
                     </button>
                     <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0" aria-labelledby="page-header-notifications-dropdown">
 
-                        <div class="dropdown-head bg-primary bg-pattern rounded-top">
+                        <div class="dropdown-head bg-dark rounded-top">
                             <div class="p-3">
                                 <div class="row align-items-center">
                                     <div class="col">
-                                        <h6 class="m-0 fs-16 fw-semibold text-white"> Notifications </h6>
+                                        <h6 class="m-0 fs-16 fw-semibold text-white"> Notificações </h6>
                                     </div>
                                     <div class="col-auto dropdown-tabs">
-                                        <span class="badge badge-soft-light fs-13"> 4 New</span>
+                                        <span class="badge badge-soft-warning fs-13"> 4 Novos</span>
                                     </div>
                                 </div>
                             </div>
@@ -421,17 +421,17 @@
                                 <ul class="nav nav-tabs dropdown-tabs nav-tabs-custom" data-dropdown-tabs="true" id="notificationItemsTab" role="tablist">
                                     <li class="nav-item waves-effect waves-light">
                                         <a class="nav-link active" data-bs-toggle="tab" href="#all-noti-tab" role="tab" aria-selected="true">
-                                            All (4)
+                                            Todos (4)
                                         </a>
                                     </li>
                                     <li class="nav-item waves-effect waves-light">
                                         <a class="nav-link" data-bs-toggle="tab" href="#messages-tab" role="tab" aria-selected="false">
-                                            Messages
+                                            Mensagens
                                         </a>
                                     </li>
                                     <li class="nav-item waves-effect waves-light">
                                         <a class="nav-link" data-bs-toggle="tab" href="#alerts-tab" role="tab" aria-selected="false">
-                                            Alerts
+                                            Alertas
                                         </a>
                                     </li>
                                 </ul>
@@ -542,8 +542,8 @@
                                     </div>
 
                                     <div class="my-3 text-center view-all">
-                                        <button type="button" class="btn btn-soft-success waves-effect waves-light">View
-                                            All Notifications <i class="ri-arrow-right-line align-middle"></i></button>
+                                        <button type="button" class="btn btn-soft-warning waves-effect waves-light">
+                                            Ver Todas Notificações <i class="ri-arrow-right-line align-middle"></i></button>
                                     </div>
                                 </div>
 
@@ -646,8 +646,8 @@
                                     </div>
 
                                     <div class="my-3 text-center view-all">
-                                        <button type="button" class="btn btn-soft-success waves-effect waves-light">View
-                                            All Messages <i class="ri-arrow-right-line align-middle"></i></button>
+                                        <button type="button" class="btn btn-soft-warning waves-effect waves-light">
+                                            Ver Todas Mensagens <i class="ri-arrow-right-line align-middle"></i></button>
                                     </div>
                                 </div>
                             </div>

@@ -16,9 +16,20 @@ class HomeController extends Controller
      *
      * @return void
      */
-    public function __construct()
+    public function __construct(Request $request)
     {
-        $this->middleware('auth');
+        switch ($request->getUri()){
+            case "http://127.0.0.1:8000/":
+                return view('landing');
+            break;
+
+            case "http://127.0.0.1:8000/auth-signup-basic";
+                return view('auth-signup-basic');
+            break;
+                
+            default:
+                $this->middleware('auth');
+        }
     }
 
     /**

@@ -1,6 +1,6 @@
 @extends('layouts.master-without-nav')
 @section('title')
-@lang('translation.signup')
+Criar Conta
 @endsection
 @section('content')
 
@@ -22,12 +22,11 @@
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="text-center mt-sm-5 mb-4 text-white-50">
-                                <div>
+                                <div class="mp-logo">
                                     <a href="index" class="d-inline-block auth-logo">
-                                        <img src="{{ URL::asset('assets/images/logo-light.png') }}" alt="" height="20">
+                                        <img src="{{ URL::asset('assets/images/logos/mp-logo.png') }}" alt="" height="200">
                                     </a>
                                 </div>
-                                <p class="mt-3 fs-15 fw-medium">Premium Admin & Dashboard Template</p>
                             </div>
                         </div>
                     </div>
@@ -39,40 +38,36 @@
 
                                 <div class="card-body p-4">
                                     <div class="text-center mt-2">
-                                        <h5 class="text-primary">Create New Account</h5>
-                                        <p class="text-muted">Get your free velzon account now</p>
+                                        <h4 class="text-dark">Crie uma Conta</h4>
+                                        <p class="text-muted">Preencha as informações abaixo</p>
                                     </div>
                                     <div class="p-2 mt-4">
                                         <form class="needs-validation" novalidate action="index">
 
                                             <div class="mb-3">
                                                 <label for="useremail" class="form-label">Email <span class="text-danger">*</span></label>
-                                                <input type="email" class="form-control" id="useremail" placeholder="Enter email address" required>
+                                                <input type="email" class="form-control" id="useremail" placeholder="Insira seu email" required>
                                                 <div class="invalid-feedback">
-                                                    Please enter email
+                                                    Insira seu email
                                                 </div>
                                             </div>
                                             <div class="mb-3">
-                                                <label for="username" class="form-label">Username <span class="text-danger">*</span></label>
-                                                <input type="text" class="form-control" id="username" placeholder="Enter username" required>
+                                                <label for="username" class="form-label">Nome <span class="text-danger">*</span></label>
+                                                <input type="text" class="form-control" id="username" placeholder="Insira seu nome" required>
                                                 <div class="invalid-feedback">
-                                                    Please enter username
+                                                    Insira seu nome
                                                 </div>
                                             </div>
 
                                             <div class="mb-3">
-                                                <label class="form-label" for="password-input">Password</label>
+                                                <label class="form-label" for="password-input">Senha</label>
                                                 <div class="position-relative auth-pass-inputgroup">
-                                                    <input type="password" class="form-control pe-5 password-input" onpaste="return false" placeholder="Enter password" id="password-input" aria-describedby="passwordInput" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+                                                    <input type="password" class="form-control pe-5 password-input" onpaste="return false" placeholder="Crie uma senha" id="password-input" aria-describedby="passwordInput" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
                                                     <button class="btn btn-link position-absolute end-0 top-0 text-decoration-none shadow-none text-muted password-addon" type="button" id="password-addon"><i class="ri-eye-fill align-middle"></i></button>
                                                     <div class="invalid-feedback">
-                                                        Please enter password
+                                                        Insira uma senha
                                                     </div>
                                                 </div>
-                                            </div>
-
-                                            <div class="mb-4">
-                                                <p class="mb-0 fs-12 text-muted fst-italic">By registering you agree to the Velzon <a href="#" class="text-primary text-decoration-underline fst-normal fw-medium">Terms of Use</a></p>
                                             </div>
 
                                             <div id="password-contain" class="p-3 bg-light mb-2 rounded">
@@ -84,21 +79,9 @@
                                             </div>
 
                                             <div class="mt-4">
-                                                <button class="btn btn-success w-100" type="submit">Sign Up</button>
+                                                <button class="btn btn-warning w-100 font-size-b14" type="submit">Criar Conta</button>
                                             </div>
 
-                                            <div class="mt-4 text-center">
-                                                <div class="signin-other-title">
-                                                    <h5 class="fs-13 mb-4 title text-muted">Create account with</h5>
-                                                </div>
-
-                                                <div>
-                                                    <button type="button" class="btn btn-primary btn-icon waves-effect waves-light"><i class="ri-facebook-fill fs-16"></i></button>
-                                                    <button type="button" class="btn btn-danger btn-icon waves-effect waves-light"><i class="ri-google-fill fs-16"></i></button>
-                                                    <button type="button" class="btn btn-dark btn-icon waves-effect waves-light"><i class="ri-github-fill fs-16"></i></button>
-                                                    <button type="button" class="btn btn-info btn-icon waves-effect waves-light"><i class="ri-twitter-fill fs-16"></i></button>
-                                                </div>
-                                            </div>
                                         </form>
 
                                     </div>
@@ -108,7 +91,7 @@
                             <!-- end card -->
 
                             <div class="mt-4 text-center">
-                                <p class="mb-0">Already have an account ? <a href="auth-signin-basic" class="fw-semibold text-primary text-decoration-underline"> Signin </a> </p>
+                                <p class="mb-0">Já tem uma conta? <a href="auth-signin-basic" class="fw-semibold text-primary text-decoration-underline"> Logue-se </a> </p>
                             </div>
 
                         </div>
@@ -125,7 +108,7 @@
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="text-center">
-                                <p class="mb-0 text-muted">&copy; <script>document.write(new Date().getFullYear())</script> Velzon. Crafted with <i class="mdi mdi-heart text-danger"></i> by Themesbrand</p>
+                                <p class="mb-0 text-muted"><script>document.write(new Date().getFullYear())</script> &copy; M&P Gourmet. Criado por Agência Hanne.</p>
                             </div>
                         </div>
                     </div>

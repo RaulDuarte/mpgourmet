@@ -2,22 +2,23 @@
 @section('title') @lang('translation.faqs') @endsection
 @section('content')
     @component('components.breadcrumb')
-        @slot('li_1') Pages @endslot
-        @slot('title') FAQs @endslot
+        @slot('li_1')
+        @endslot
+        @slot('title')
+        @endslot
     @endcomponent
 
     <div class="row">
         <div class="col-lg-12">
-            <div class="card rounded-0 bg-soft-success mx-n4 mt-n4 border-top">
+            <div class="card rounded-0 bg-soft-warning mx-n4 mt-n4 border-top">
                 <div class="px-4">
                     <div class="row">
                         <div class="col-xxl-5 align-self-center">
                             <div class="py-4">
-                                <h4 class="display-6 coming-soon-text">Frequently asked questions</h4>
-                                <p class="text-success fs-15 mt-3">If you can not find answer to your question in our FAQ, you can always contact us or email us. We will answer you shortly!</p>
+                                <h4 class="display-6 coming-soon-text">Questões Frequentes</h4>
+                                <p class="text-dark fs-15 mt-3">Se você não encontrar a resposta para sua pergunta em nosso FAQ, você sempre pode entrar em contato conosco por e-mail. Responderemos em breve!</p>
                                 <div class="hstack flex-wrap gap-2">
-                                    <button type="button" class="btn btn-primary btn-label rounded-pill"><i class="ri-mail-line label-icon align-middle rounded-pill fs-16 me-2"></i> Email Us</button>
-                                    <button type="button" class="btn btn-info btn-label rounded-pill"><i class="ri-twitter-line label-icon align-middle rounded-pill fs-16 me-2"></i> Send Us Tweet</button>
+                                    <button type="button" class="btn btn-success btn-label rounded-pill"><i class="ri-mail-line label-icon align-middle rounded-pill fs-16 me-2"></i>contato@mpgourmet.com.br</button>
                                 </div>
                             </div>
                         </div>
@@ -37,10 +38,10 @@
                     <div class="mt-3">
                         <div class="d-flex align-items-center mb-2">
                             <div class="flex-shrink-0 me-1">
-                                <i class="ri-question-line fs-24 align-middle text-success me-1"></i>
+                                <i class="ri-question-line fs-24 align-middle text-warning me-1"></i>
                             </div>
                             <div class="flex-grow-1">
-                                <h5 class="fs-16 mb-0 fw-semibold">General Questions</h5>
+                                <h5 class="fs-16 mb-0 fw-semibold">Quetões Gerais</h5>
                             </div>
                         </div>
 
@@ -101,10 +102,10 @@
                     <div class="mt-3">
                         <div class="d-flex align-items-center mb-2">
                             <div class="flex-shrink-0 me-1">
-                                <i class="ri-user-settings-line fs-24 align-middle text-success me-1"></i>
+                                <i class="ri-user-settings-line fs-24 align-middle text-warning me-1"></i>
                             </div>
                             <div class="flex-grow-1">
-                                <h5 class="fs-16 mb-0 fw-semibold">Manage Account</h5>
+                                <h5 class="fs-16 mb-0 fw-semibold">Gerenciamento da Conta</h5>
                             </div>
                         </div>
 
@@ -165,10 +166,10 @@
                     <div class="mt-3">
                         <div class="d-flex align-items-center mb-2">
                             <div class="flex-shrink-0 me-1">
-                                <i class="ri-shield-keyhole-line fs-24 align-middle text-success me-1"></i>
+                                <i class="ri-shield-keyhole-line fs-24 align-middle text-warning me-1"></i>
                             </div>
                             <div class="flex-grow-1">
-                                <h5 class="fs-16 mb-0 fw-semibold">Privacy &amp; Security</h5>
+                                <h5 class="fs-16 mb-0 fw-semibold">Privacidade e Segurança</h5>
                             </div>
                         </div>
 

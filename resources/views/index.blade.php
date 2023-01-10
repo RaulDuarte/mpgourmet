@@ -7,6 +7,14 @@
     <link href="{{ URL::asset('assets/libs/swiper/swiper.min.css') }}" rel="stylesheet" type="text/css" />
 @endsection
 @section('content')
+    @component('components.breadcrumb')
+        @slot('li_1')
+            
+        @endslot
+        @slot('title')
+            
+        @endslot
+    @endcomponent
 
     <div class="row">
         <div class="col">

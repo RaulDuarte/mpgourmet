@@ -1,6 +1,7 @@
 /*TODO: Tranferir para custom.css e minificar neste arquivo */
 .auth-one-bg .bg-overlay {
-    background: linear-gradient(180deg,#471016,#912d34b2) !important;
+    /*background: linear-gradient(180deg,#471016,#912d34b2) !important;*/
+    background: linear-gradient(180deg,#0e0e0e,#21212157) !important;
     opacity: .9 !important;
 }
 
@@ -15,8 +16,12 @@
 } 
 
 [data-layout=vertical][data-sidebar=dark] .navbar-menu {
-    background: #471016;
-    border-right: 1px solid #471016;
+    background: #212121;
+    border-right: 1px solid #212121;
+}
+
+.bg-dark{
+    background-color: #212121 !important;
 }
 
 .logo-lg img {
@@ -25,7 +30,7 @@
 }
 
 .navbar-brand-box{
-    background:#471016 !important;
+    background:#212121 !important;
 }
 
 [data-layout=vertical][data-sidebar=dark] .navbar-nav .nav-link {
@@ -49,7 +54,7 @@
     bottom: 0;
     opacity: .9;
     background: #4b38b3;
-    background: linear-gradient(180deg,#471016,#912d34b2) !important;
+    background: linear-gradient(180deg,#0e0e0e,#21212157) !important;
 }
 
 .bg-overlay-image {
@@ -68,4 +73,74 @@
 
 .pallet-primary-color{
     color: #471016;
+}
+
+.text-white-100{
+    color: #ffffff;
+}
+
+.font-size-b14{
+    font-size: 14px;
+}
+
+.nav-tabs-custom .nav-item .nav-link:after{
+    background-color: #F2921D;
+}
+
+.choices__list--multiple .choices__item{
+    background-color: #0e0e0e;
+    border: 1px solid #0e0e0e;
+}
+
+a.badge.badge-soft-dark:hover {
+    color:#F2921D;
+}
+
+.nav-tabs-custom .nav-item .nav-link{
+    color: #0e0e0e;
+}
+
+.nav-tabs-custom .nav-item .nav-link.active{
+    color: #0e0e0e;
+}
+
+.breadcrumb-item+.breadcrumb-item:before {
+    display: none;
+}
+
+.avatar-lg {
+    height: 8rem;
+    width: 8rem;
+}
+
+
+
+.avatar-md {
+    height: 4.5rem;
+    width: 6.5rem;
+}
+
+.step-arrow-nav .nav .nav-link.active{
+    color:#0e0e0e !important;
+}
+
+.step-arrow-nav .nav .nav-link.active {
+    background-color: rgba(242,146,29,0.099);
+}
+
+.step-arrow-nav .nav .nav-link.done {
+    background-color: rgba(66, 186, 150, 0.099);
+    color: #0e0e0e;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #F2921D;
+}
+
+.nav-tabs-custom .nav-item .nav-link {
+    color: #ffffff;
+}
+
+.nav-tabs-custom .nav-item .custom-tab{
+    color: #0e0e0e !important;
 }

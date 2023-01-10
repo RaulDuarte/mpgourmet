@@ -8,10 +8,10 @@
 @section('content')
     @component('components.breadcrumb')
         @slot('li_1')
-            Ecommerce
+           
         @endslot
         @slot('title')
-            Customers
+            
         @endslot
     @endcomponent
     <div class="row">
@@ -22,19 +22,16 @@
                     <div class="row g-4 align-items-center">
                         <div class="col-sm">
                             <div>
-                                <h5 class="card-title mb-0">Customer List</h5>
+                                <h5 class="card-title mb-0">Lista de Clientes</h5>
                             </div>
                         </div>
                         <div class="col-sm-auto">
                             <div class="d-flex flex-wrap align-items-start gap-2">
                                 <button class="btn btn-soft-danger" id="remove-actions" onClick="deleteMultiple()"><i
                                         class="ri-delete-bin-2-line"></i></button>
-                                <button type="button" class="btn btn-success add-btn" data-bs-toggle="modal" id="create-btn"
-                                    data-bs-target="#showModal"><i class="ri-add-line align-bottom me-1"></i> Add
-                                    Customer</button>
-                                <button type="button" class="btn btn-info"><i
-                                        class="ri-file-download-line align-bottom me-1"></i>
-                                    Import</button>
+                                <button type="button" class="btn btn-warning add-btn" data-bs-toggle="modal" id="create-btn"
+                                    data-bs-target="#showModal"><i class="ri-add-line align-bottom me-1"></i> 
+                                    Adicionar Cliente</button>
                             </div>
                         </div>
                     </div>
@@ -45,7 +42,7 @@
                             <div class="col-xl-6">
                                 <div class="search-box">
                                     <input type="text" class="form-control search"
-                                        placeholder="Search for customer, email, phone, status or something...">
+                                        placeholder="Pesquise o cliente, e-mail, telefone, status ou algo assim ...">
                                     <i class="ri-search-line search-icon"></i>
                                 </div>
                             </div>
@@ -55,7 +52,7 @@
                                     <div class="col-sm-4">
                                         <div class="">
                                             <input type="text" class="form-control" id="datepicker-range"
-                                                data-provider="flatpickr" data-range="true" placeholder="Select date">
+                                                data-provider="flatpickr" data-range="true" placeholder="Selecione uma data">
                                         </div>
                                     </div>
                                     <!--end col-->
@@ -64,9 +61,9 @@
                                             <select class="form-control" data-plugin="choices" data-choices
                                                 data-choices-search-false name="choices-single-default" id="idStatus">
                                                 <option value="">Status</option>
-                                                <option value="all" selected>All</option>
-                                                <option value="Active">Active</option>
-                                                <option value="Block">Block</option>
+                                                <option value="all" selected>Todos</option>
+                                                <option value="Active">Ativos</option>
+                                                <option value="Block">Bloqueados</option>
                                             </select>
                                         </div>
                                     </div>
@@ -75,7 +72,7 @@
                                     <div class="col-sm-4">
                                         <div>
                                             <button type="button" class="btn btn-primary w-100" onclick="SearchData();"> <i
-                                                    class="ri-equalizer-fill me-2 align-bottom"></i>Filters</button>
+                                                    class="ri-equalizer-fill me-2 align-bottom"></i>Filtrar</button>
                                         </div>
                                     </div>
                                     <!--end col-->
@@ -98,12 +95,12 @@
                                             </div>
                                         </th>
 
-                                        <th class="sort" data-sort="customer_name">Customer</th>
+                                        <th class="sort" data-sort="customer_name">Cliente</th>
                                         <th class="sort" data-sort="email">Email</th>
-                                        <th class="sort" data-sort="phone">Phone</th>
-                                        <th class="sort" data-sort="date">Joining Date</th>
+                                        <th class="sort" data-sort="phone">Telefone</th>
+                                        <th class="sort" data-sort="date">Data de Entrada</th>
                                         <th class="sort" data-sort="status">Status</th>
-                                        <th class="sort" data-sort="action">Action</th>
+                                        <th class="sort" data-sort="action">Ação</th>
                                     </tr>
                                 </thead>
                                 <tbody class="list form-check-all">
@@ -228,7 +225,7 @@
                                         <div class="hstack gap-2 justify-content-end">
                                             <button type="button" class="btn btn-light"
                                                 data-bs-dismiss="modal">Close</button>
-                                            <button type="submit" class="btn btn-success" id="add-btn">Add Customer</button>
+                                            <button type="submit" class="btn btn-warning" id="add-btn">Add Cliente</button>
                                             <button type="button" class="btn btn-success" id="edit-btn">Update</button>
                                         </div>
                                     </div>
